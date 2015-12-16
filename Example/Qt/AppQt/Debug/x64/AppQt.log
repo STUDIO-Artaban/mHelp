@@ -1,0 +1,38 @@
+﻿Build started 26/03/2013 16:54:27.
+     1>Project "D:\Dev\mHelp\Example\Qt\AppQt\AppQt.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\x64\AppQt.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing AppQt.h...
+         Uic'ing AppQt.ui...
+         Rcc'ing AppQt.qrc...
+     1>RCC : warning : No resources in 'D:\Dev\mHelp\Example\Qt\AppQt\AppQt.qrc'.
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /ID:\Dev\Qt\4.8.3\include /I.\GeneratedFiles\Debug /ID:\Dev\Qt\4.8.3\include\QtCore /ID:\Dev\Qt\4.8.3\include\QtGui /ID:\Dev\mHelp\mHelp /Zi /nologo /W1 /WX- /Od /D _WIN64 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt AppQt.cpp GeneratedFiles\Debug\moc_AppQt.cpp main.cpp
+         AppQt.cpp
+         moc_AppQt.cpp
+         main.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /ID:\Dev\Qt\4.8.3\include /I.\GeneratedFiles\Debug /ID:\Dev\Qt\4.8.3\include\QtCore /ID:\Dev\Qt\4.8.3\include\QtGui /ID:\Dev\mHelp\mHelp /Zi /nologo /W1 /WX- /Od /D _WIN64 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_AppQt.cpp
+         qrc_AppQt.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Debug\x64\AppQt.res" AppQt.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\\AppQt.exe" /NOLOGO /LIBPATH:D:\Dev\Qt\4.8.3\lib qtmaind.lib QtCored4.lib QtGuid4.lib D:\Dev\mHelp\mHelp\Debug\x64\mHelp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\x64\AppQt.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\AppQt.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\AppQt.lib" /MACHINE:X64 Debug\x64\AppQt.res
+         Debug\x64\AppQt.obj
+         Debug\x64\moc_AppQt.obj
+         Debug\x64\qrc_AppQt.obj
+         Debug\x64\main.obj
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4204: 'D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         AppQt.vcxproj -> D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\AppQt.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Dev\mHelp\Example\Qt\AppQt\Debug\x64\\AppQt.exe;#1" /manifest Debug\x64\AppQt.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\x64\AppQt.unsuccessfulbuild".
+         Touching "Debug\x64\AppQt.lastbuildstate".
+     1>Done Building Project "D:\Dev\mHelp\Example\Qt\AppQt\AppQt.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.24

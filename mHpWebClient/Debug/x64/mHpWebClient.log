@@ -1,0 +1,39 @@
+﻿Build started 26/03/2013 16:48:49.
+     1>Project "D:\Dev\mHelp\mHpWebClient\mHpWebClient.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\x64\mHpWebClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D _WIN64 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt DocHostUiHandler.cpp mHpWebClient.cpp OleClientSite.cpp OleInPlaceSite.cpp stdHelpers.cpp Tracer.cpp UrlHelper.cpp VariantHelper.cpp win32_Unicode.cpp
+         win32_Unicode.cpp
+         VariantHelper.cpp
+         UrlHelper.cpp
+         Tracer.cpp
+         stdHelpers.cpp
+         OleInPlaceSite.cpp
+         OleClientSite.cpp
+         mHpWebClient.cpp
+     1>mHpWebClient.cpp(453): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>mHpWebClient.cpp(460): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         DocHostUiHandler.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\Dev\mHelp\mHpWebClient\Debug\x64\mHpWebClient.lib" /NOLOGO Debug\x64\DocHostUiHandler.obj
+         Debug\x64\mHpWebClient.obj
+         Debug\x64\OleClientSite.obj
+         Debug\x64\OleInPlaceSite.obj
+         Debug\x64\stdHelpers.obj
+         Debug\x64\Tracer.obj
+         Debug\x64\UrlHelper.obj
+         Debug\x64\VariantHelper.obj
+         Debug\x64\win32_Unicode.obj
+         mHpWebClient.vcxproj -> D:\Dev\mHelp\mHpWebClient\Debug\x64\mHpWebClient.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\x64\mHpWebClient.unsuccessfulbuild".
+         Touching "Debug\x64\mHpWebClient.lastbuildstate".
+     1>Done Building Project "D:\Dev\mHelp\mHpWebClient\mHpWebClient.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.24

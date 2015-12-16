@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EvaluateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FavsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpCom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EvaluateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FavsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpCom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHelp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mHelp.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ToolServ.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mHplock.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mHppar.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mHptask.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mouse.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="opparbok.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="oprepbok.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ParaBook.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="RepBook.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="stopmous.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="iconrad.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Book.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Opbook.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mHpIco.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mHelp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

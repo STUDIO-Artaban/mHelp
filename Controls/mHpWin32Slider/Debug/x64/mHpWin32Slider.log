@@ -1,0 +1,52 @@
+﻿Build started 26/03/2013 16:51:00.
+     1>Project "D:\Dev\mHelp\Controls\mHpWin32Slider\mHpWin32Slider.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\x64\mHpWin32Slider.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /ID:\Dev\mHelp\mHpCtrlMgmt /Zi /nologo /W3 /WX- /Od /D _WIN64 /D _DEBUG /D _WINDOWS /D _USRDLL /D MHPWIN32SLIDER_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt mHpWin32Slider.cpp
+         mHpWin32Slider.cpp
+     1>d:\dev\mhelp\controls\mhpwin32slider\mHpWin32Slider.h(59): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>mHpWin32Slider.cpp(18): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>mHpWin32Slider.cpp(47): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>mHpWin32Slider.cpp(63): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>mHpWin32Slider.cpp(122): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>mHpWin32Slider.cpp(168): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>mHpWin32Slider.cpp(198): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>mHpWin32Slider.cpp(220): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>mHpWin32Slider.cpp(238): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Debug\x64\mHpWin32Slider.res" mHpWin32Slider.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\x64\mHpWin32Slider.dll.embed.manifest.res" Debug\x64\mHpWin32Slider_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.dll" /INCREMENTAL /NOLOGO D:\Dev\mHelp\mHpCtrlMgmt\Debug\x64\mHpCtrlMgmt.lib version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"mHpWin32Slider.def" /MANIFEST /ManifestFile:"Debug\x64\mHpWin32Slider.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.lib" /MACHINE:X64 /DLL Debug\x64\mHpWin32Slider.res
+         Debug\x64\mHpWin32Slider.dll.embed.manifest.res
+         Debug\x64\mHpWin32Slider.obj
+            Creating library D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.lib and object D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.exp
+         mHpWin32Slider.vcxproj -> D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.dll
+       Manifest:
+         Deleting file "Debug\x64\mHpWin32Slider.dll.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\x64\mHpWin32Slider.dll.embed.manifest" /manifest Debug\x64\mHpWin32Slider.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\x64\mHpWin32Slider.dll.embed.manifest.res" Debug\x64\mHpWin32Slider_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.dll" /INCREMENTAL /NOLOGO D:\Dev\mHelp\mHpCtrlMgmt\Debug\x64\mHpCtrlMgmt.lib version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"mHpWin32Slider.def" /MANIFEST /ManifestFile:"Debug\x64\mHpWin32Slider.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.lib" /MACHINE:X64 /DLL Debug\x64\mHpWin32Slider.res
+         Debug\x64\mHpWin32Slider.dll.embed.manifest.res
+         Debug\x64\mHpWin32Slider.obj
+         mHpWin32Slider.vcxproj -> D:\Dev\mHelp\Controls\mHpWin32Slider\Debug\x64\mHpWin32Slider.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\x64\mHpWin32Slider.unsuccessfulbuild".
+         Touching "Debug\x64\mHpWin32Slider.lastbuildstate".
+     1>Done Building Project "D:\Dev\mHelp\Controls\mHpWin32Slider\mHpWin32Slider.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.84

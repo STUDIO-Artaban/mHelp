@@ -1,0 +1,26 @@
+﻿Build started 26/03/2013 16:49:47.
+     1>Project "D:\Dev\mHelp\mHpQtCtrlMgmt\mHpQtCtrlMgmt.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\x64\mHpQtCtrlMgmt.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing mhpqtctrlmgmt_global.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /ID:\Dev\Qt\4.8.3\include /I.\GeneratedFiles\Debug /ID:\Dev\Qt\4.8.3\include\QtCore /ID:\Dev\Qt\4.8.3\include\QtGui /ID:\Dev\mHelp\mHpCtrlMgmt /ID:\Dev\Qt\4.8.3\src\corelib\kernel /ID:\Dev\mHelp\QtmHpCtrl /Zi /nologo /W1 /WX- /Od /D _WIN64 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D MHPQTCTRLMGMT_LIB /D _WINDLL /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_mhpqtctrlmgmt_global.cpp mHpQtCtrlMgmt.cpp
+         moc_mhpqtctrlmgmt_global.cpp
+         mHpQtCtrlMgmt.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\\mHpQtCtrlMgmt.dll" /NOLOGO /LIBPATH:D:\Dev\Qt\4.8.3\lib qtmaind.lib QtCored4.lib QtGuid4.lib D:\Dev\mHelp\mHpCtrlMgmt\Debug\x64\mHpCtrlMgmt.lib D:\Dev\mHelp\QtmHpCtrl\Debug\x64\QtmHpCtrl.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"mHpQtCtrlMgmt.def" /MANIFEST /ManifestFile:"Debug\x64\mHpQtCtrlMgmt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\mHpQtCtrlMgmt.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\mHpQtCtrlMgmt.lib" /MACHINE:X64 /DLL Debug\x64\moc_mhpqtctrlmgmt_global.obj
+         Debug\x64\mHpQtCtrlMgmt.obj
+            Creating library D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\mHpQtCtrlMgmt.lib and object D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\mHpQtCtrlMgmt.exp
+         mHpQtCtrlMgmt.vcxproj -> D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\mHpQtCtrlMgmt.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Dev\mHelp\mHpQtCtrlMgmt\Debug\x64\\mHpQtCtrlMgmt.dll;#2" /manifest Debug\x64\mHpQtCtrlMgmt.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\x64\mHpQtCtrlMgmt.unsuccessfulbuild".
+         Touching "Debug\x64\mHpQtCtrlMgmt.lastbuildstate".
+     1>Done Building Project "D:\Dev\mHelp\mHpQtCtrlMgmt\mHpQtCtrlMgmt.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.04

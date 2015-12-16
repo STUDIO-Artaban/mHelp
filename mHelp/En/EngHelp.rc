@@ -1,0 +1,528 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLSERV            BITMAP                  "ToolServ.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_EHP_LOCKED     ICON                    "Ehplock.ico"
+IDI_ICON_EHP_PARAM      ICON                    "Ehppar.ico"
+IDI_ICON_EHP_TASK       ICON                    "Ehptask.ico"
+IDI_ICON_MOUSE          ICON                    "mouse.ico"
+IDI_ICON_OP_PARAM       ICON                    "opparbok.ico"
+IDI_ICON_OP_REP         ICON                    "oprepbok.ico"
+IDI_ICON_PARAM_REP      ICON                    "ParaBook.ico"
+IDI_ICON_RSREP          ICON                    "RepBook.ico"
+IDI_ICON_STOPMOUSE      ICON                    "stopmous.ico"
+IDI_ICON_RADIO_PARAM    ICON                    "iconrad.ico"
+IDI_ICON_BOOK           ICON                    "Book.ico"
+IDI_ICON_OP_BOOK        ICON                    "Opbook.ico"
+IDI_ICON_ENG_HELP       ICON                    "EhpIco.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Concept by : VIGUIE Pascal"
+            VALUE "CompanyName", "Unknow Software©"
+            VALUE "FileDescription", "EngHelp - DirectX 6.0"
+            VALUE "FileVersion", "1.3"
+            VALUE "InternalName", "EngHelp"
+            VALUE "LegalCopyright", "Copyright © 1999 - 2004"
+            VALUE "LegalTrademarks", "EngHelp (TM)"
+            VALUE "OriginalFilename", "EngHelp.dll"
+            VALUE "ProductName", "Unknow Software© EngHelp"
+            VALUE "ProductVersion", "1.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_EHPSERV, DIALOG
+    BEGIN
+        RIGHTMARGIN, 489
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_DLG_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 247
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DLG_ENGHELP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 609
+        BOTTOMMARGIN, 456
+    END
+
+    IDD_DLG_FAVSFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 253
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DLG_EHPEVALUATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 214
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_EHPSERV DIALOGEX 0, 0, 491, 314
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EngHelp V1.3"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next >",IDC_NEXT,154,193,50,14
+    DEFPUSHBUTTON   "Finish",IDCANCEL,210,193,50,14
+    ICON            IDI_ICON_ENG_HELP,IDC_STATIC_EHPICON,4,7,20,20,0,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC_SEPHOR,3,180,257,9
+    GROUPBOX        "Control List on which the user occured :",IDC_FRAME_WHAT,34,3,226,177
+    PUSHBUTTON      "< Back",IDC_LAST,97,193,50,14,NOT WS_VISIBLE
+    CONTROL         "Tree1",IDC_VIEW_RSTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_TABSTOP,270,9,132,84,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add",IDC_BTN_ADD,410,80,67,13,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "List1",IDC_SERV_LIST_TASK,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,270,108,208,81,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Configure",IDC_BTN_CONFIG,414,194,64,14,WS_DISABLED
+    CONTROL         "List1",IDC_LIST_EHPSAVE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_TABSTOP,54,25,174,74,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "New",IDC_NEW_EHPSAVE,53,105,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Add",IDC_OPEN_EHPSAVE,109,105,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Remove",IDC_REMOVE_EHPSAVE,166,105,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Status :",IDC_STATIC_STATE,53,124,28,8,NOT WS_VISIBLE
+    LTEXT           "Loading file ' '",IDC_CURRENT_STATUS,84,124,142,8,NOT WS_VISIBLE
+    CONTROL         "Progress1",IDC_PROGRESS_EHPSAVE,"msctls_progress32",NOT WS_VISIBLE,53,135,176,15
+    GROUPBOX        "Item to add :",IDC_FRAME_TREEITEM,410,5,68,70,NOT WS_VISIBLE
+    CONTROL         "Folder",IDC_RADIO_FOLDER,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,20,50,10
+    CONTROL         "Document",IDC_RADIO_DOC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,34,51,10
+    CONTROL         "Parameter(s)",IDC_RADIO_PARAM,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,48,51,10
+    PUSHBUTTON      "Move down \\/",IDC_BTN_MOVEDOWN,344,194,64,14,WS_DISABLED
+    PUSHBUTTON      "Move up /\\",IDC_BTN_MOVEUP,274,194,64,14,WS_DISABLED
+    CONTROL         "List1",IDC_PARAM_LIST_TASK,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,270,215,208,65,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Hide",IDC_BTN_HIDESHOW,270,284,64,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Help  (F1)",IDC_DOCUMENTATION,4,194,50,14
+END
+
+IDD_DLG_PARAM DIALOGEX 0, 0, 251, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selected Parameter Evolution"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDC_VALID_PARAM,197,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,41,50,14
+    GROUPBOX        "Values :",IDC_STATIC,4,86,243,123
+    GROUPBOX        "Evolution tools",IDC_STATIC,100,2,91,83
+    LTEXT           "Evolution type :",IDC_STATIC,106,12,59,8
+    LTEXT           "Associated value :",IDC_STATIC_VALASSOC,106,38,65,8
+    EDITTEXT        IDC_EDIT_ASSOC,106,47,55,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "List1",IDC_LIST_VALUE,"SysListView32",LVS_SMALLICON | LVS_SHOWSELALWAYS | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,10,97,231,107,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Apply",IDC_APPLY,106,66,78,14
+    GROUPBOX        "Parameter info.",IDC_STATIC,4,2,91,83
+    LTEXT           "Type :",IDC_STATIC,10,14,23,8
+    EDITTEXT        IDC_EDIT_TYPE,40,13,48,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Description :",IDC_STATIC,10,42,70,8
+    EDITTEXT        IDC_EDIT_DECRIT,10,52,80,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Limit :",IDC_STATIC,10,29,19,8
+    EDITTEXT        IDC_EDIT_LIMITE,40,27,48,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_TYPE,106,23,79,61,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Paste",IDC_COLLER,106,63,78,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Copy",IDC_COPIER,106,42,78,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Remove",IDC_REMOVE_PARAM,197,22,50,14
+    CONTROL         "Ext.",IDC_CHECK_EXT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,106,66,31,14
+    PUSHBUTTON      "Help  (F1)",IDC_EVODLG_HELP,197,70,50,14
+    LTEXT           "sel.",IDC_STATIC_SELECTION,177,56,12,11,NOT WS_VISIBLE
+END
+
+IDD_DLG_ENGHELP DIALOGEX 0, 0, 610, 457
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "EngHelp V1.3"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Start",IDC_START,501,433,44,16
+    DEFPUSHBUTTON   "Close",IDCANCEL,551,433,51,16
+    CONTROL         "Slider1",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,90,382,171,18
+    LTEXT           "Slow",IDC_STATIC_SLOW,90,401,20,8
+    LTEXT           "Fast",IDC_STATIC_FAST,246,401,15,8
+    GROUPBOX        "Mode",IDC_FRAME_MODE,6,371,71,42,WS_GROUP
+    GROUPBOX        "Cursor speed",IDC_FRAME_CURSORSPEED,82,371,215,42
+    CONTROL         "Help",IDC_CHECK_ENGHELP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,383,31,10
+    CONTROL         "Support",IDC_CHECK_ASSIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,397,48,10
+    ICON            IDI_ICON_MOUSE,IDC_STATIC_MOUSEICON,268,385,20,20
+    CONTROL         "List1",IDC_TASK_LIST,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,139,179,158,149,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_NUMREPEAT,90,427,38,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    PUSHBUTTON      "Create",IDC_CREATE_ADD,448,433,47,16
+    EDITTEXT        IDC_EDIT_RS,6,352,291,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Tree1",IDC_TREEVIEW_RS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_TABSTOP,17,178,119,150,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Open",IDC_ADD_EHPFILES,6,121,58,16
+    PUSHBUTTON      "Remove",IDC_REMOVE_EHPFILES,70,121,58,16
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,309,150,292,53,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_SEARCH,309,112,292,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SEARCH,543,130,58,16
+    PUSHBUTTON      "Select Event",IDC_SET_SEARCH,543,207,58,16
+    CONTROL         "List2",IDC_LIST_EHPFILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_TABSTOP,6,33,291,84,WS_EX_CLIENTEDGE
+    LTEXT           "Type in the word(s) to search for :",IDC_STATIC_SEARCH,309,101,110,10
+    GROUPBOX        "Repeat Option",IDC_FRAME_REPEAT,6,416,130,31
+    LTEXT           "Repetition number :",IDC_STATIC_NUMREPEAT,13,429,76,10
+    LTEXT           "Type in the keyword to find :",IDC_STATIC_INDEX,309,5,92,10
+    EDITTEXT        IDC_EDIT_INDEX,309,16,292,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select Event",IDC_SET_INDEX,543,81,58,16
+    LTEXT           "Selected Event :",IDC_STATIC_SELEVENT,6,342,291,10
+    CONTROL         "Tab2",IDC_TAB_ENGHELP,"SysTabControl32",0x0,2,2,300,26
+    CONTROL         "List1",IDC_LIST_FAVORITES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,308,228,292,55,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add",IDC_ADD_FAVORITES,308,295,58,16
+    PUSHBUTTON      "Remove",IDC_REMOVE_FAVORITES,372,295,58,16
+    GROUPBOX        "EngHelp Version 1.3",IDC_FRAME_ENGHELPVERS,307,363,292,48
+    ICON            IDI_ICON_ENG_HELP,IDC_ENGHELP_ICON,316,377,20,20,0,WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_LOAD_PROGRESS,"msctls_progress32",0x0,6,154,292,14
+    LTEXT           "Status :",IDC_STATIC_STATUS,6,143,27,8
+    LTEXT           "test",IDC_STATUS,37,143,259,8
+    GROUPBOX        "",IDC_FRAME_SEPHORY,307,412,292,11
+    CONTROL         "List1",IDC_LIST_INDEX,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,309,33,292,44,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Select Event",IDC_SET_FAVORITES,543,295,58,16
+    GROUPBOX        "",IDC_FRAME_SEPVERT,346,375,8,25
+    LTEXT           "Ehpamic help and support system EngHelp Vers 1.3, a concept Unknow Software© 1999 - 2004.\nFind more information about EngHelp on the web site :\n\nhttp://vp.magellan.free.fr/EngHelp/",IDC_STATIC_ABOUT,361,379,164,26
+    LISTBOX         IDC_HIDE_INDEXLIST,305,68,46,18,NOT LBS_NOTIFY | LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | NOT WS_BORDER | WS_TABSTOP
+    LISTBOX         IDC_HIDE_SEARCHLIST,303,193,46,18,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | NOT WS_BORDER | WS_TABSTOP
+    LTEXT           "Event :",IDC_STATIC_EVENT,359,83,28,8
+    EDITTEXT        IDC_EDIT_EVENT,390,83,137,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Repetition :",IDC_STATIC_REPEATITION,307,430,43,9
+    LTEXT           "No",IDC_STATIC_REPEATCFG,353,430,40,8
+    CONTROL         "List1",IDC_HIDE_FAVLIST,"SysListView32",LVS_REPORT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,302,263,76,29
+    LTEXT           "Auto Lnch :",IDC_STATIC_AUTOASSIST,307,441,44,8
+    LTEXT           "No",IDC_STATIC_AUTOASSISTCFG,353,441,40,9
+    GROUPBOX        "",IDC_FRAME_AUTOASSIST,370,318,8,40
+    LTEXT           "Sequence to launch :",IDC_STATIC_FAVROW,383,322,70,9
+    EDITTEXT        IDC_EDIT_AUTOASSIST,454,321,146,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Favorites",IDC_RADIO_FAV,"Button",BS_AUTORADIOBUTTON,303,325,57,9
+    CONTROL         "Auto Launch",IDC_RADIO_AUTOASSIST,"Button",BS_AUTORADIOBUTTON,303,338,64,9
+    PUSHBUTTON      "Save Change",IDC_SAVE_AUTOASSIST,548,342,51,16
+    PUSHBUTTON      "Reset",IDC_RESET_AUTOASSIST,497,342,46,16
+    PUSHBUTTON      "Save",IDC_SAVE_FAVORITES,435,295,58,16
+    PUSHBUTTON      "Open Favorites",IDC_OPEN_FAVORITES,135,121,58,16
+    GROUPBOX        "Max Delay Allowed",IDC_STATIC_MAXDELAY,142,416,155,32
+    LTEXT           "Delay (Hour/Minute) :",IDC_STATIC_EDITDELAY,148,430,72,8
+    EDITTEXT        IDC_EDIT_HOUR,222,429,24,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MINUTE,253,429,24,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           ":",IDC_STATIC_POINTS,246,431,8,8
+    PUSHBUTTON      "Help  (F1)",IDC_BUTTON_HELP,534,389,57,14
+    CONTROL         "Tree1",IDC_HIDDEN_TREEVIEW,"SysTreeView32",TVS_NOTOOLTIPS | TVS_NOSCROLL | NOT WS_VISIBLE | WS_TABSTOP,7,295,94,42
+    PUSHBUTTON      "Destroy",IDC_DESTROY,395,434,47,16
+END
+
+IDD_DLG_FAVSFILE DIALOGEX 0, 0, 257, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Saved Favorite Tasks"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,200,118,53,15
+    CONTROL         "List1",IDC_LIST_FAVSFILE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,250,76,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add Favorite",IDC_ADD_FAVFILE,140,118,53,15
+    PUSHBUTTON      "Destroy",IDC_REMOVE_FAVFILE,79,118,53,15
+    EDITTEXT        IDC_EDIT_FILENAME,9,93,237,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "EngHelp File Path :",IDC_STATIC_FILENAME,3,81,250,32
+    PUSHBUTTON      "Help  (F1)",IDC_FAVDLG_HELP,3,118,53,15
+END
+
+IDD_DLG_EHPEVALUATE DIALOGEX 0, 0, 217, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Accept",IDOK,109,130,50,14
+    GROUPBOX        "EngHelp Kit Evaluated Version License",IDC_STATIC,3,3,211,122
+    ICON            IDI_ICON_ENG_HELP,IDC_STATIC,10,16,21,20
+    EDITTEXT        IDC_EDIT_LICENSE,38,16,169,102,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "Refuse",IDCANCEL,164,130,50,14
+    LTEXT           "Number of remaining day :",IDC_STATIC_NUMDAY,4,133,82,8
+    LTEXT           "30",IDC_STATIC_RESTDAY,89,133,13,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_PARAM DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 12, 0
+0x6376, 0x6376, 0x7678, 0x6378, 0x6376, 0x0078, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CREATE_EHPDLG       "Impossible to create the interface."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_QUERY_SERVTREE      "Do you really want to destroy the following aborescence ?"
+    IDS_COPY_FIRST_SEL      "Copy the first sel."
+    IDS_COPY_PASTE          "Copy/Paste"
+    IDS_INCREMENTATION      "Increase"
+    IDS_DECREMENTATION      "Decrease"
+    IDS_CHANGE_STATE        "Change state"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EVERY_WHAT          "Every :"
+    IDS_COLUMN_VALUE        "Value"
+    IDS_COLUMN_ROW          "Row"
+    IDS_FOLDER              "Folder"
+    IDS_DOCUMENT            "Document"
+    IDS_PARAMETERS          "Parameters"
+    IDS_ADD_CONTENTS        "Add content :"
+    IDS_LIST_OF_CTRL        "Control List on which the user occured :"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANCEL              "Cancel"
+    IDS_SAVE                "Save"
+    IDS_PARAMETER           "Parameter"
+    IDS_TYPE                "Type"
+    IDS_DESCRIPTION         "Description"
+    IDS_LIMITED             "Limit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHTYPE_I            "I"
+    IDS_SHTYPE_R            "R"
+    IDS_SHTYPE_C            "C"
+    IDS_SHTYPE_B            "B"
+    IDS_SHTYPE_S            "S"
+    IDS_SHTYPE_LI           "LI"
+    IDS_SHTYPE_LR           "LR"
+    IDS_SHTYPE_LC           "LC"
+    IDS_SHTYPE_LB           "LB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHTYPE_LS           "LS"
+    IDS_NEXT                "Next >"
+    IDS_TAB_EHPFILES        "EngHelp File(s)"
+    IDS_TAB_CONTENTS        "Contents"
+    IDS_TAB_CONFIG          "Configuration"
+    IDS_TAB_SEARCH          "Search"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAB_INDEX           "Index"
+    IDS_TAB_FAVORITES       "Favorites"
+    IDS_TAB_ABOUT           "About"
+    IDS_COLUMN_TOPIC        "Topic"
+    IDS_COLUMN_FILEPATH     "File path"
+    IDS_STATUS_READY        "Ready"
+    IDS_COLUMN_EVENT        "Event"
+    IDS_COLUMN_KEYWORD      "Keyword"
+    IDS_STATUS_NOOPENEDFILE "No opened file..."
+    IDS_OPEN_FILTER         "EngHelp files (*.dhf)"
+    IDS_STATUS_OPENINGFILE  "Opening file"
+    IDS_STATUS_UPDATEINDEX  "Update index list..."
+    IDS_FILE_ALREADYOPENED  "This next EngHelp file is already opened !\n"
+    IDS_STATUS_SEARCHTOPIC  "Searching string in topic"
+    IDS_STATUS_NORESULT     "No events found..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOREPEAT_OPTION     "No"
+    IDS_COLUMN_REPEATITION  "Repetition"
+    IDS_REMOVEFAV_AUTOASSIST 
+                            "This event is in the auto launch\nassistance list! Do you really want\nto remove it ?"
+    IDS_SELECT_EHPFILE      "Select EngHelp file to add event :"
+    IDS_STATUS_TOPIC        "Loading topic"
+    IDS_WARNING_TREE        "Warning ! Every modifications will\nbe lost ! Do you want to continue ?"
+    IDS_STOCK_FINISHED      "Impossible to save this task ! It has\nbeen already saved and closed."
+    IDS_EVENT_CUSTOMING     "Impossible to save or to terminate this task !\nYou are saving it in another application."
+    IDS_CFGCUSTOM_INFO      "Set description and value limit of control's state parameter :"
+    IDS_NEW_FILTER          "EngHelp file (*.dhf)"
+    IDS_UNDEFINED           "Undefined"
+    IDS_HIDE                "Hide"
+    IDS_SHOW                "Show"
+    IDS_TRUE                "True"
+    IDS_FALSE               "False"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_NOTFOUND       "This task does not exist longer !"
+    IDS_NO_FAVSFILE         "There is no favorite task in this next file :\n"
+    IDS_FAVFILE_EXIST       "This favorite task already exist in his next file :\n"
+    IDS_FAVFILE_SAVED       "This favorite task has been saved in his next file :\n"
+    IDS_FAVFILE_DESTROYED   "The selected favorite task has been destroyed."
+    IDS_FAVORITE_EXIST      "This task already exist in yours favorites task, at row : "
+    IDS_FAVFILE_ADDED       "The selected task has been added in yours favorites, at row : "
+    IDS_ERROR_NOPROBLEM     "No Error."
+    IDS_ERROR_NOEHPERROR    "Error identification unsupported."
+    IDS_ERROR_READPROCESS   "The EngHelp is processing a read operation."
+    IDS_ERROR_WRITEPROCESS  "The EngHelp is processing a write operation."
+    IDS_ERROR_NOINITPROC    "The ""EngHelp_MainActive"" procedure did not be called."
+    IDS_ERROR_EHPFILEPATH   "The EngHelp file path is not valid, or does not exist."
+    IDS_ERROR_FAVINDEX      "The favorite task index is not valid, or does not exist."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_PROCESSKEY    "The process register key is not valid."
+    IDS_ERROR_FILECORRUPT   "The EngHelp file is corrupted."
+    IDS_ERROR_CUSTOMINDEX   "The custom task identification is not valid, or does not exist."
+    IDS_ERROR_PARAMINDEX    "The parameter index is not valid, or does not exist."
+    IDS_ERROR_REPEATOPT     "The new repeat option is out of range [1;100]."
+    IDS_ERROR_INTTYPE       "The parameter type indexed is not an integer."
+    IDS_ERROR_REPEATINDEX   "The repeat option index is not valid, or ranks above the number of repetition. "
+    IDS_ERROR_SELINDEX      "The select index is not valid, or ranks above the number of selection."
+    IDS_ERROR_INTSELECT     "The parameter type indexed is not an integer, but a list of integer."
+    IDS_ERROR_NEWINTVAL     "The new integer value is not valid."
+    IDS_ERROR_NEWBOOLVAL    "The new integer value is out of range [0;2]."
+    IDS_ERROR_INTLISTTYPE   "The parameter type indexed is not a list of integer."
+    IDS_ERROR_NOREMOVESEL   "There is no selection to remove."
+    IDS_ERROR_STRTYPE       "The parameter type indexed is not a string."
+    IDS_ERROR_STRSELECT     "The parameter type indexed is not a string, but a list of string."
+    IDS_ERROR_STRLISTTYPE   "The parameter type indexed is not a list of string."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_NEWSTRVAL     "The new string value is not valid."
+    IDS_ERROR_SELECTINT     "The parameter type indexed is not a list of integer, but an integer."
+    IDS_ERROR_SELECTSTR     "The parameter type indexed is not a list of string, but a string."
+    IDS_ERROR_NOSELECTION   "There is no selection."
+    IDS_LICENSE             "Art. L1:\n_ The EngHelp Kit or every applications that support this help cannot be sell, and must be\nused only in a personal occasion, or in an internal's company, association, or public's\nservice or organism.\n\nArt. L2:\n_ All copy or reproduction of the EngHelp Kit is illicit, because its software is deposited\nto the Program Protection Agency (APP), which is subdued to the intellectual property code\n(DATABASE AND SOFTWARE RELATIVES DISPOSITIONS).\n\nArt. L3:\n_ The process that permits to manage this sort of computer help and support is certified,\nwith a patent at the Industrial Property National Institute (INPI), and at the European\nPatent Office (EPO). To implement this sort of computer help and support you contact me,\nto come to terms with me for a possible exploitation's license.\n\nPascal Viguié\n3, rue du Chateau\n34830 Clapiers (France)\nTEL: +33 (0)9.50.46.14.86\nGSM: +33 (0)6.71.90.79.87\nE-MAIL: viguie.pascal@gmail.com"
+    IDS_MUST_CALL_MAINACTIVE 
+                            "Warning ! The ""EngHelp_MainActive"" procedure has not\nbeen called, at the activation of the main interface."
+    IDS_CLOSE               "Close"
+    IDS_SAVE_SUCCESSFUL     "The task has been saved successfully !"
+    IDS_SRVMSG_TERMINATE    "Do you really want to terminate macro creation process ?"
+    IDS_AUTOLNCH_YES        "Yes"
+    IDS_CONFIRM_DELETING    "Are you sure you want to destroy this task and remove so\nall associated favorite tasks, like those that are saved in\nthis file and defined in the auto launch sequence ?"
+    IDS_DELETING_FAILED     "An error occurred during the destruction of the task !\nThe EngHelp file that contained it is corrupted."
+    IDS_ENGHELP_ALOPENNED   "Impossible to create or destroy a macro! A EngHelp principal\ninterface is currently opened on another application, thus\nprohibiting all operations of creation or suppression. You\nmust close these entire EngHelp interface before being able\nto carry out those operations."
+    IDS_LOCK_DHPOPEN        "Impossible to open the EngHelp main interface! The system is\nnot ready because a macro creation or launching is in progress."
+    IDS_FORCE_DHPCLOSE      "A macro creation or launching process is running!\nThis EngHelp main interface will be closed now."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

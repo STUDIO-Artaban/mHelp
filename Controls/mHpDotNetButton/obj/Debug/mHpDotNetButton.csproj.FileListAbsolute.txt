@@ -1,0 +1,4 @@
+D:\Dev\mHelp\Controls\mHpDotNetButton\bin\Debug\x64\mHpDotNetButton.dll
+D:\Dev\mHelp\Controls\mHpDotNetButton\bin\Debug\x64\mHpDotNetButton.pdb
+D:\Dev\mHelp\Controls\mHpDotNetButton\bin\Debug\x64\mHpDotNetCtrl.dll
+D:\Dev\mHelp\Controls\mHpDotNetButton\bin\Debug\x64\mHpDotNetCtrl.pdb

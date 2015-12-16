@@ -1,0 +1,21 @@
+LIBRARY "mHelp"
+EXPORTS
+mHelpInit	@1
+mHelpOpen	@2
+mHelpErrorMsg	@3
+mHelpLaunchFavTask	@4
+mHelpCreateCustomTask	@5
+mHelpLnchCustomTask	@6
+mHelpGetParamCnt	@7
+mHelpGetParamType	@8
+mHelpGetRepeatOpt	@9
+mHelpSetRepeatOpt	@10
+mHelpGetIntParamVal	@11
+mHelpSetIntParamVal	@12
+mHelpAddIntParamVal	@13
+mHelpRemoveIntParamVal	@14
+mHelpGetStrParamVal	@15
+mHelpSetStrParamVal	@16
+mHelpAddStrParamVal	@17
+mHelpRemoveStrParamVal	@18
+mHelpDestroyCustomTask	@19

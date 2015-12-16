@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Controls">
+      <UniqueIdentifier>{5085c77e-50da-4da3-a2f4-c48f47550f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{42f74618-ef53-4616-a86d-c1da78e55691}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CfgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlMgmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHp2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpDotNetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpSnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpVar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ComCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\Button\BtnCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ChangeExe\ChExCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ComboBox\CboCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\EditBox\EditCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ListBox\ListCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ListView\ListView.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\Menu\MenuCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\RichEdit\EditRich.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\Slider\SlidCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\TabCtrl\TabCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\ToolBar\ToolBar.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\TreeView\TreeView.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="mHpJavaCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CfgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlMgmt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHp2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpDotNetCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpSnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpVar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ComCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\Button\BtnCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ChangeExe\ChExCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ComboBox\CboCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\EditBox\EditCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ListBox\ListCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ListView\ListView.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\Menu\MenuCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\RichEdit\EditRich.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\Slider\SlidCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\TabCtrl\TabCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\ToolBar\ToolBar.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\TreeView\TreeView.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="mHpJavaCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mHpCtrl.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ctrls\Menu\menu.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ChangeExe\iconexe.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ctrls\button\button.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\Button\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\Button\Radio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ComboBox\combo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\EditBox\edit.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ListBox\multilist.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ListBox\singlelist.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\Slider\slider.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="warning.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sep.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\RichEdit\editrich.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ListView\listview.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\TabCtrl\TabCtrl.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\ToolBar\ToolBar.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ctrls\TreeView\TreeView.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Default.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="click.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="souris.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="realpush.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="unpress.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="altgr.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shift.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dblclick.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="press.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="unpress.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

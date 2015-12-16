@@ -1,0 +1,4 @@
+D:\Dev\mHelp\mHpWPFCtrl\bin\Debug\mHpWPFCtrl.dll
+D:\Dev\mHelp\mHpWPFCtrl\bin\Debug\mHpWPFCtrl.pdb
+D:\Dev\mHelp\mHpWPFCtrl\bin\Debug\x64\mHpWPFCtrl.dll
+D:\Dev\mHelp\mHpWPFCtrl\bin\Debug\x64\mHpWPFCtrl.pdb

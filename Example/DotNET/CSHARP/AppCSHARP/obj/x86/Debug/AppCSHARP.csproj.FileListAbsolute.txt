@@ -1,0 +1,3 @@
+D:\Dev\mHelp\Example\DotNET\CSHARP\AppCSHARP\bin\Debug\x64\AppCSHARP.exe.config
+D:\Dev\mHelp\Example\DotNET\CSHARP\AppCSHARP\bin\Debug\x64\AppCSHARP.exe
+D:\Dev\mHelp\Example\DotNET\CSHARP\AppCSHARP\bin\Debug\x64\AppCSHARP.pdb

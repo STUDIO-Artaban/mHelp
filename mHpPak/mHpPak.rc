@@ -1,0 +1,166 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "Réalisation : VIGUIE Pascal"
+            VALUE "CompanyName", "Unknow Software©"
+            VALUE "FileDescription", "mHelp Pakage"
+            VALUE "FileVersion", "1.3"
+            VALUE "InternalName", "mHpPak"
+            VALUE "LegalCopyright", "Copyright © 1999 - 2004"
+            VALUE "LegalTrademarks", "mHelp (TM)"
+            VALUE "OriginalFilename", "mHpPak.dll"
+            VALUE "ProductName", "Unknow Software© mHelp"
+            VALUE "ProductVersion", "1.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_TYPE_INTEGER        "Entier"
+    IDS_TYPE_REAL           "Réel"
+    IDS_TYPE_CHARACTER      "Caractère"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TYPE_BOOLEAN        "Booléen"
+    IDS_TYPE_STRING         "Chaîne de caractères"
+    IDS_TYPE_INTEGER_LIST   "Liste d'entiers"
+    IDS_TYPE_REAL_LIST      "Liste de réels"
+    IDS_TYPE_CHARACTER_LIST "Liste de caractères"
+    IDS_TYPE_BOOLEAN_LIST   "Liste de booléens"
+    IDS_TYPE_STRING_LIST    "Liste de chaînes de caractères"
+    IDS_SHTYPE_I            "I"
+    IDS_SHTYPE_R            "R"
+    IDS_SHTYPE_C            "C"
+    IDS_SHTYPE_B            "B"
+    IDS_SHTYPE_S            "S"
+    IDS_SHTYPE_LI           "LI"
+    IDS_SHTYPE_LR           "LR"
+    IDS_SHTYPE_LC           "LC"
+    IDS_SHTYPE_LB           "LB"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SHTYPE_LS           "LS"
+    IDS_MHPFILE_ALREADYEXIST 
+                            "Attention ! Ce fichier existe déjà. Voulez-vous\ncontinuer et supprimer ainsi tout ce qui a été\nenregistré ?"
+    IDS_DOC_NOTFOUND        "Le fichier d'aide n'a pas été trouvé. Vérifiez qu'il se trouve bien\ndans le chemin suivant: "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENHLP_OPEN        "Impossible d'ouvrir le fichier mHelp! Vérifiez\nque celui se trouve bien dans son répertoire..."
+    IDS_OPENHLP_READ        "Erreur de lecture dans le fichier mHelp suivant :\n"
+    IDS_LOAD_LIBRARY1       "Erreur critique: Impossible de charger la DLL """
+    IDS_OPENHLP_CREATE      "Impossible de créer le fichier mHelp."
+    IDS_OPENHLP_WRITE       "Impossible d'écrire dans le fichier mHelp."
+    IDS_LOAD_LIBRARY2       """!\nVeuillez vérifier la présence de cette DLL sur votre système\nou réinstaller mHelp."
+    IDS_DELETE_MHPFILE      "Impossible de détruire le fichier mHelp."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RENAME_MHPFILE      "Impossible de renommer le fichier temporaire."
+    IDS_WRITE_TMPFILE       "Impossible d'écrire dans le fichier temporaire."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GET_PROCLIB1        "Erreur critique: Impossible de récupérer la fonction\n"""
+    IDS_GET_PROCLIB2        """! Veuillez réinstaller mHelp\nsur votre système."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

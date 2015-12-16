@@ -1,0 +1,4 @@
+D:\Dev\mHelp\Example\DotNET\VBNET\AppVBNET\bin\Debug\x64\AppVBNET.exe.config
+D:\Dev\mHelp\Example\DotNET\VBNET\AppVBNET\bin\Debug\x64\AppVBNET.exe
+D:\Dev\mHelp\Example\DotNET\VBNET\AppVBNET\bin\Debug\x64\AppVBNET.pdb
+D:\Dev\mHelp\Example\DotNET\VBNET\AppVBNET\bin\Debug\x64\AppVBNET.xml

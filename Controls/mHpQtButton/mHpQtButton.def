@@ -1,0 +1,3 @@
+LIBRARY "mHpQtButton"
+EXPORTS
+CreateNewInstance	@1

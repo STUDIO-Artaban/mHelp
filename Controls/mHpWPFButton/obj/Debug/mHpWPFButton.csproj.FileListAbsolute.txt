@@ -1,0 +1,4 @@
+D:\Dev\mHelp\Controls\mHpWPFButton\bin\Debug\x64\mHpWPFButton.dll
+D:\Dev\mHelp\Controls\mHpWPFButton\bin\Debug\x64\mHpWPFButton.pdb
+D:\Dev\mHelp\Controls\mHpWPFButton\bin\Debug\x64\mHpWPFCtrl.dll
+D:\Dev\mHelp\Controls\mHpWPFButton\bin\Debug\x64\mHpWPFCtrl.pdb

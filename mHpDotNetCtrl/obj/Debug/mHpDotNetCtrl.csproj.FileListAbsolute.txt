@@ -1,0 +1,2 @@
+D:\Dev\mHelp\mHpDotNetCtrl\bin\Debug\x64\mHpDotNetCtrl.dll
+D:\Dev\mHelp\mHpDotNetCtrl\bin\Debug\x64\mHpDotNetCtrl.pdb

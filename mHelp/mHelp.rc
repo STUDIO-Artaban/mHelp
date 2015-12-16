@@ -1,0 +1,537 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLSERV            BITMAP                  "ToolServ.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MHP_LOCKED     ICON                    "mHplock.ico"
+IDI_ICON_MHP_PARAM      ICON                    "mHppar.ico"
+IDI_ICON_MHP_TASK       ICON                    "mHptask.ico"
+IDI_ICON_MOUSE          ICON                    "mouse.ico"
+IDI_ICON_OP_PARAM       ICON                    "opparbok.ico"
+IDI_ICON_OP_REP         ICON                    "oprepbok.ico"
+IDI_ICON_PARAM_REP      ICON                    "ParaBook.ico"
+IDI_ICON_RSREP          ICON                    "RepBook.ico"
+IDI_ICON_STOPMOUSE      ICON                    "stopmous.ico"
+IDI_ICON_RADIO_PARAM    ICON                    "iconrad.ico"
+IDI_ICON_BOOK           ICON                    "Book.ico"
+IDI_ICON_OP_BOOK        ICON                    "Opbook.ico"
+IDI_ICON_ENG_HELP       ICON                    "mHpIco.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "Réalisation : VIGUIE Pascal"
+            VALUE "CompanyName", "Unknow Software©"
+            VALUE "FileDescription", "mHelp - DirectX 9"
+            VALUE "FileVersion", "1.3.0.0"
+            VALUE "InternalName", "mHelp"
+            VALUE "LegalCopyright", "Copyright © 1999 - 2012"
+            VALUE "LegalTrademarks", "mHelp (TM)"
+            VALUE "OriginalFilename", "mHelp.dll"
+            VALUE "ProductName", "Unknow Software© mHelp"
+            VALUE "ProductVersion", "1.3.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLG_MHPSERV, DIALOG
+    BEGIN
+        RIGHTMARGIN, 489
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_DLG_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 247
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DLG_MHELP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+        BOTTOMMARGIN, 457
+    END
+
+    IDD_DLG_FAVSFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 253
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DLG_MHPEVALUATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 214
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MHPSERV DIALOGEX 0, 0, 491, 314
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "mHelp V1.3"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Suivant >",IDC_NEXT,154,193,50,14
+    DEFPUSHBUTTON   "Terminer",IDCANCEL,210,193,50,14
+    ICON            IDI_ICON_ENG_HELP,IDC_STATIC_MHPICON,3,7,20,20,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC_SEPHOR,3,180,257,9
+    GROUPBOX        "Liste des contrôles sur lesquels l'utilisateur est intervenu :",IDC_FRAME_WHAT,34,3,226,177
+    PUSHBUTTON      "< Précédent",IDC_LAST,97,193,50,14,NOT WS_VISIBLE
+    CONTROL         "Tree1",IDC_VIEW_RSTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_HSCROLL | WS_TABSTOP,270,9,132,84,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Ajouter",IDC_BTN_ADD,410,80,67,13,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "List1",IDC_SERV_LIST_TASK,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,270,108,208,81,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Configurer",IDC_BTN_CONFIG,414,194,64,14,WS_DISABLED
+    CONTROL         "List1",IDC_LIST_MHPSAVE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_TABSTOP,54,25,174,74,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Nouveau",IDC_NEW_MHPSAVE,53,105,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Ajouter",IDC_OPEN_MHPSAVE,109,105,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Retirer",IDC_REMOVE_MHPSAVE,166,105,50,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Statut :",IDC_STATIC_STATE,53,124,28,8,NOT WS_VISIBLE
+    LTEXT           "Chargement du fichier ' '",IDC_CURRENT_STATUS,84,124,142,8,NOT WS_VISIBLE
+    CONTROL         "Progress1",IDC_PROGRESS_MHPSAVE,"msctls_progress32",NOT WS_VISIBLE,53,135,176,15
+    GROUPBOX        "Elément à ajouter :",IDC_FRAME_TREEITEM,410,5,71,70,NOT WS_VISIBLE
+    CONTROL         "Répertoire",IDC_RADIO_FOLDER,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,20,49,10
+    CONTROL         "Document",IDC_RADIO_DOC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,34,51,10
+    CONTROL         "Paramètre(s)",IDC_RADIO_PARAM,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,418,48,55,10
+    PUSHBUTTON      "Déplacer \\/",IDC_BTN_MOVEDOWN,344,194,64,14,WS_DISABLED
+    PUSHBUTTON      "Déplacer /\\",IDC_BTN_MOVEUP,274,194,64,14,WS_DISABLED
+    CONTROL         "List1",IDC_PARAM_LIST_TASK,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,270,215,208,65,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Cacher",IDC_BTN_HIDESHOW,270,284,64,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Aide  (F1)",IDC_DOCUMENTATION,4,194,50,14
+    CONTROL         "",IDC_HIDDEN_SERVTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_BORDER | WS_HSCROLL | WS_TABSTOP,263,59,96,40
+END
+
+IDD_DLG_PARAM DIALOGEX 0, 0, 251, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Evolution du paramètre sélectionné"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Valider",IDC_VALID_PARAM,197,2,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,197,40,50,14
+    GROUPBOX        "Valeurs :",IDC_STATIC,4,86,243,123
+    GROUPBOX        "Outils d'évolution",IDC_STATIC,100,2,91,83
+    LTEXT           "Type d'évolution :",IDC_STATIC,106,12,59,8
+    LTEXT           "Valeur associée :",IDC_STATIC_VALASSOC,106,38,65,8
+    EDITTEXT        IDC_EDIT_ASSOC,106,48,58,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "List1",IDC_LIST_VALUE,"SysListView32",LVS_SMALLICON | LVS_SHOWSELALWAYS | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,10,97,231,107,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Appliquer",IDC_APPLY,106,66,78,14
+    GROUPBOX        "Paramètre info.",IDC_STATIC,4,2,91,83
+    LTEXT           "Type :",IDC_STATIC,10,14,23,8
+    EDITTEXT        IDC_EDIT_TYPE,40,13,48,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Description :",IDC_STATIC,10,42,70,8
+    EDITTEXT        IDC_EDIT_DECRIT,10,52,80,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Limite :",IDC_STATIC,10,29,23,8
+    EDITTEXT        IDC_EDIT_LIMITE,40,27,48,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_TYPE,106,23,79,61,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Coller",IDC_COLLER,106,63,78,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Copier",IDC_COPIER,106,42,78,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Retirer",IDC_REMOVE_PARAM,197,21,50,14
+    CONTROL         "Ext.",IDC_CHECK_EXT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,106,66,31,14
+    PUSHBUTTON      "Aide (F1)",IDC_EVODLG_HELP,197,70,50,14
+    LTEXT           "sél.",IDC_STATIC_SELECTION,178,55,13,10,NOT WS_VISIBLE
+END
+
+IDD_DLG_MHELP DIALOGEX 0, 0, 611, 458
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "mHelp ?!"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Démarrer",IDC_START,507,433,44,16
+    DEFPUSHBUTTON   "Quitter",IDCANCEL,556,433,45,16
+    CONTROL         "Slider1",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,90,382,171,18
+    LTEXT           "Lente",IDC_STATIC_SLOW,90,401,20,8
+    LTEXT           "Rapide",IDC_STATIC_FAST,242,401,24,8
+    GROUPBOX        "Mode",IDC_FRAME_MODE,6,371,71,42,WS_GROUP
+    GROUPBOX        "Vitesse du curseur",IDC_FRAME_CURSORSPEED,82,371,215,42
+    CONTROL         "Aide",IDC_CHECK_MHELP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,383,30,10
+    CONTROL         "Assistance",IDC_CHECK_ASSIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,397,48,10
+    ICON            IDI_ICON_MOUSE,IDC_STATIC_MOUSEICON,268,385,20,20
+    CONTROL         "List1",IDC_TASK_LIST,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,139,183,158,149,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_NUMREPEAT,90,427,38,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    PUSHBUTTON      "Créer",IDC_CREATE_ADD,403,433,46,16
+    EDITTEXT        IDC_EDIT_RS,6,352,291,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Tree1",IDC_TREEVIEW_RS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_HSCROLL | WS_TABSTOP,13,182,123,150,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Ouvrir",IDC_ADD_MHPFILES,6,121,58,16
+    PUSHBUTTON      "Retirer",IDC_REMOVE_MHPFILES,132,121,58,16
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,309,150,292,53,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_SEARCH,309,112,292,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Rechercher",IDC_SEARCH,543,130,58,16
+    PUSHBUTTON      "Sélectionner",IDC_SET_SEARCH,543,207,58,16
+    CONTROL         "List2",IDC_LIST_MHPFILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_TABSTOP,6,33,291,84,WS_EX_CLIENTEDGE
+    LTEXT           "Entrez la chaîne de caractères à rechercher :",IDC_STATIC_SEARCH,309,101,148,10
+    GROUPBOX        "Option de Répétition",IDC_FRAME_REPEAT,6,416,130,31
+    LTEXT           "Nombre de répétitions :",IDC_STATIC_NUMREPEAT,13,429,76,10
+    LTEXT           "Entrez le mot clé à rechercher :",IDC_STATIC_INDEX,309,5,108,10
+    EDITTEXT        IDC_EDIT_INDEX,309,16,292,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Sélectionner",IDC_SET_INDEX,543,81,58,16
+    CONTROL         "Tab2",IDC_TAB_MHELP,"SysTabControl32",TCS_OWNERDRAWFIXED,2,2,193,26
+    CONTROL         "List1",IDC_LIST_FAVORITES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,308,228,292,55,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Ajouter",IDC_ADD_FAVORITES,308,295,58,16
+    PUSHBUTTON      "Retirer",IDC_REMOVE_FAVORITES,372,295,58,16
+    GROUPBOX        "mHelp Version 1.3",IDC_FRAME_MHELPVERS,307,363,292,47
+    ICON            IDI_ICON_ENG_HELP,IDC_MHELP_ICON,316,377,20,20,0,WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_LOAD_PROGRESS,"msctls_progress32",0x0,6,154,292,14
+    LTEXT           "Statut :",IDC_STATIC_STATUS,6,143,27,8
+    LTEXT           "test",IDC_STATUS,37,143,259,8
+    GROUPBOX        "",IDC_FRAME_SEPHORY,307,412,292,11
+    CONTROL         "List1",IDC_LIST_INDEX,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,309,33,292,44,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Sélectionner",IDC_SET_FAVORITES,543,295,58,16
+    GROUPBOX        "",IDC_FRAME_SEPVERT,346,375,8,25
+    LTEXT           "Système d'aide dynamique mHelp Vers 1.3, un concept Unknow Software© 1999 - 2004.\nRetrouvez toutes les informations complémentaires sur le site:\n\nhttp://vp.magellan.free.fr/DynHelp/",IDC_STATIC_ABOUT,361,379,165,25
+    LISTBOX         IDC_HIDE_INDEXLIST,305,68,46,18,NOT LBS_NOTIFY | LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | NOT WS_BORDER | WS_TABSTOP
+    LISTBOX         IDC_HIDE_SEARCHLIST,303,193,46,18,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | NOT WS_BORDER | WS_TABSTOP
+    LTEXT           "Evènement :",IDC_STATIC_EVENT,347,84,42,8
+    EDITTEXT        IDC_EDIT_EVENT,390,83,137,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Répétition :",IDC_STATIC_REPEATITION,307,430,43,9
+    LTEXT           "Non",IDC_STATIC_REPEATCFG,353,430,46,8
+    CONTROL         "List1",IDC_HIDE_FAVLIST,"SysListView32",LVS_REPORT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,302,263,76,29
+    LTEXT           "Auto décl. :",IDC_STATIC_AUTOASSIST,307,441,43,8
+    LTEXT           "Non",IDC_STATIC_AUTOASSISTCFG,353,441,40,9
+    GROUPBOX        "",IDC_FRAME_AUTOASSIST,366,318,8,40
+    LTEXT           "Séquence à lancer :",IDC_STATIC_FAVROW,380,322,68,9
+    EDITTEXT        IDC_EDIT_AUTOASSIST,456,321,144,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Favorites",IDC_RADIO_FAV,"Button",BS_AUTORADIOBUTTON,303,325,57,9
+    CONTROL         "Auto décl.",IDC_RADIO_AUTOASSIST,"Button",BS_AUTORADIOBUTTON,303,338,59,9
+    PUSHBUTTON      "Enregistrer",IDC_SAVE_AUTOASSIST,548,342,51,16
+    PUSHBUTTON      "Effacer",IDC_RESET_AUTOASSIST,497,342,46,16
+    PUSHBUTTON      "Enregistrer",IDC_SAVE_FAVORITES,435,295,58,16
+    PUSHBUTTON      "Tâche Favorite",IDC_OPEN_FAVORITES,195,121,58,16
+    GROUPBOX        "Délai Maximum Autorisé",IDC_STATIC_MAXDELAY,142,416,155,32
+    LTEXT           "Délai (Heure/Minute) :",IDC_STATIC_EDITDELAY,148,430,72,8
+    EDITTEXT        IDC_EDIT_HOUR,222,429,24,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MINUTE,253,429,24,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           ":",IDC_STATIC_POINTS,246,431,8,8
+    PUSHBUTTON      "Aide (F1)",IDC_BUTTON_HELP,534,389,57,14
+    PUSHBUTTON      "Détruire",IDC_DESTROY,455,433,46,16
+    CONTROL         "Tree1",IDC_HIDDEN_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_HSCROLL | WS_TABSTOP,6,301,124,37,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_LISTVIEW_COMPONENT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,210,17,87,50
+    LTEXT           "Liste des contrôles gérés par mHelp :",IDC_STATIC_CTRLMGMT,211,4,86,8
+    CONTROL         "",IDC_TOPIC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,132,301,119,37
+END
+
+IDD_DLG_FAVSFILE DIALOGEX 0, 0, 257, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tâches Favorites Enregistrées"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Fermer",IDCANCEL,200,118,53,15
+    CONTROL         "List1",IDC_LIST_FAVSFILE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,250,76,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Ajouter Fav.",IDC_ADD_FAVFILE,142,118,53,15
+    PUSHBUTTON      "Détruire",IDC_REMOVE_FAVFILE,84,118,53,15
+    EDITTEXT        IDC_EDIT_FILENAME,9,93,237,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Fichier mHelp :",IDC_STATIC_FILENAME,3,81,250,32
+    PUSHBUTTON      "Aide (F1)",IDC_FAVDLG_HELP,3,118,53,15
+END
+
+IDD_DLG_MHPEVALUATE DIALOGEX 0, 0, 217, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Accepter",IDOK,108,130,50,14
+    GROUPBOX        "Licence : Kit mHelp (Version d'Evaluation )",IDC_STATIC,3,3,211,122
+    ICON            IDI_ICON_ENG_HELP,IDC_STATIC,10,16,21,20
+    EDITTEXT        IDC_EDIT_LICENSE,38,16,169,102,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "Refuser",IDCANCEL,164,130,50,14
+    LTEXT           "Nombre de jours restants :",IDC_STATIC_NUMDAY,4,133,83,8
+    LTEXT           "30",IDC_STATIC_RESTDAY,89,133,13,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_PARAM DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 12, 0
+0x6376, 0x6376, 0x7678, 0x6378, 0x6376, 0x0078, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CREATE_MHPDLG       "Impossible de créer l'interface."
+    IDS_TAB_COMPONENT       "Contrôles"
+    IDS_COLUMN_CTRLTYPE     "Type"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_COLUMN_PLATFORM     "Compatibilité"
+    IDS_COLUMN_CTRLCLASS    "Classe(s)/Objet(s)"
+    IDS_COLUMN_DLLNAME      "DLL"
+    IDS_COLUMN_DLLVERS      "Version"
+    IDS_COLUMN_DLLSTATUS    "Statut"
+    IDS_TOPIC_TODEFINE      "Sujet à définir"
+    IDS_QUERY_SERVTREE      "Etes-vous sûr de vouloir supprimer\ntoute l'arborescence qui suit ?"
+    IDS_COPY_FIRST_SEL      "Copier la 1° sél."
+    IDS_COPY_PASTE          "Copier/Coller"
+    IDS_INCREMENTATION      "Incrémenter"
+    IDS_DECREMENTATION      "Décrémenter"
+    IDS_CHANGE_STATE        "Changer d'état"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EVERY_WHAT          "Toutes les :"
+    IDS_COLUMN_VALUE        "Valeur"
+    IDS_COLUMN_ROW          "Rang"
+    IDS_FOLDER              "Répertoire"
+    IDS_DOCUMENT            "Document"
+    IDS_PARAMETERS          "Paramètres"
+    IDS_ADD_CONTENTS        "Ajouter les nouveaux éléments de  l'arborescence :"
+    IDS_LIST_OF_CTRL        "Liste des contrôles sur lesquels l'utilisateur est intervenu :"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CANCEL              "Annuler"
+    IDS_SAVE                "Enregistrer"
+    IDS_PARAMETER           "Paramètre"
+    IDS_TYPE                "Type"
+    IDS_DESCRIPTION         "Description"
+    IDS_LIMITED             "Limite"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SHTYPE_I            "I"
+    IDS_SHTYPE_R            "R"
+    IDS_SHTYPE_C            "C"
+    IDS_SHTYPE_B            "B"
+    IDS_SHTYPE_S            "S"
+    IDS_SHTYPE_LI           "LI"
+    IDS_SHTYPE_LR           "LR"
+    IDS_SHTYPE_LC           "LC"
+    IDS_SHTYPE_LB           "LB"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SHTYPE_LS           "LS"
+    IDS_NEXT                "Suivant >"
+    IDS_TAB_MHPFILES        "Fichiers"
+    IDS_TAB_CONTENTS        "Sommaire"
+    IDS_TAB_CONFIG          "Configuration"
+    IDS_TAB_SEARCH          "Rechercher"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TAB_INDEX           "Index"
+    IDS_TAB_FAVORITES       "Favorites"
+    IDS_TAB_ABOUT           "A Propos"
+    IDS_COLUMN_TOPIC        "Sujet"
+    IDS_COLUMN_FILEPATH     "Chemin du fichier"
+    IDS_STATUS_READY        "Prêt"
+    IDS_COLUMN_EVENT        "Evènement"
+    IDS_COLUMN_KEYWORD      "Mot clé"
+    IDS_STATUS_NOOPENEDFILE "Pas de fichier ouvert..."
+    IDS_OPEN_FILTER         "Fichier mHelp (*.mhf)"
+    IDS_STATUS_OPENINGFILE  "Ouverture du fichier"
+    IDS_STATUS_UPDATEINDEX  "Rafraîchissement de la liste des indexs..."
+    IDS_FILE_ALREADYOPENED  "Le fichier mHelp qui suit est déjà ouvert !\n"
+    IDS_STATUS_SEARCHTOPIC  "Recherche chaîne de caractères"
+    IDS_STATUS_NORESULT     "Aucun évènement trouvé..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NOREPEAT_OPTION     "Non"
+    IDS_COLUMN_REPEATITION  "Répétition"
+    IDS_REMOVEFAV_AUTOASSIST 
+                            "Cet évènement fait partie de la liste\ndes tâches auto-déclenché ! Etes-vous\nsûr de vouloir la retirer ?"
+    IDS_SELECT_MHPFILE      "Sélectionner le fichier mHelp pour y ajouter la tâche :"
+    IDS_STATUS_TOPIC        "Chargement du sujet"
+    IDS_WARNING_TREE        "Attention ! Etes-vous sûr de vouloir\nrevenir en arrière et perdre ainsi\ntoutes les modifications ?"
+    IDS_STOCK_FINISHED      "Impossible d'enregistrer cette macro ! Cette\ndernière a déjà été sauvegardé et fermé."
+    IDS_EVENT_CUSTOMING     "Impossible d'ajouter cet évènement ! La macro\nest en cours de sauvegarde, à partir d'une\nautre application."
+    IDS_CFGCUSTOM_INFO      "Description et limite de l'état paramétrable du contrôle :"
+    IDS_NEW_FILTER          "Fichier mHelp (*.mhf)"
+    IDS_UNDEFINED           "Non défini"
+    IDS_HIDE                "Cacher"
+    IDS_SHOW                "Réafficher"
+    IDS_TRUE                "Vrai"
+    IDS_FALSE               "Faux"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TASK_NOTFOUND       "Cette tâche n'existe plus !"
+    IDS_NO_FAVSFILE         "Il n'y a pas de tâches favorites dans le fichier suivant :\n"
+    IDS_FAVFILE_EXIST       "Cette tâche favorite existe déjà dans le fichier suivant :\n"
+    IDS_FAVFILE_SAVED       "Cette tâche favorite a été enregistré dans le fichier suivant :\n"
+    IDS_FAVFILE_DESTROYED   "La tâche favorite sélectionnée a été détruite."
+    IDS_FAVORITE_EXIST      "Cette tâche favorite existe déjà, au rang : "
+    IDS_FAVFILE_ADDED       "La tâche sélectionnée a été ajouté aux tâches favorites, au rang : "
+    IDS_ERROR_NOPROBLEM     "Pas d'erreur."
+    IDS_ERROR_NOMHPERROR    "Erreur non définie."
+    IDS_ERROR_READPROCESS   "L'aide mHelp est en cours de déroulement."
+    IDS_ERROR_WRITEPROCESS  "L'aide mHelp est en cours de création de tâche."
+    IDS_ERROR_NOINITPROC    "La procédure ""mHelp_MainActive"" n'a pas été appelé."
+    IDS_ERROR_MHPFILEPATH   "Le chemin du fichier mHelp n'est pas valide, ou n'existe pas."
+    IDS_ERROR_FAVINDEX      "La tâche favorite indexée n'est pas valide, ou n'existe pas."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_PROCESSKEY    "L'opération en cours n'est pas valide."
+    IDS_ERROR_FILECORRUPT   "Le fichier mHelp comporte une erreur."
+    IDS_ERROR_CUSTOMINDEX   "L'identifiant de la tâche configurable n'est pas valide, ou n'existe pas."
+    IDS_ERROR_PARAMINDEX    "Le paramètre indexé n'est pas valide, ou n'existe pas."
+    IDS_ERROR_REPEATOPT     "La répétition configurée n'est pas comprise entre 1 et 99."
+    IDS_ERROR_INTTYPE       "Le paramètre indexé n'est pas un entier."
+    IDS_ERROR_REPEATINDEX   "La répétition indexée n'est pas valide, ou n'existe pas. "
+    IDS_ERROR_SELINDEX      "La sélection indexée n'est pas valide, ou n'existe pas."
+    IDS_ERROR_INTSELECT     "Le type de paramètre indexé n'est pas un entier, mais une liste d'entiers."
+    IDS_ERROR_NEWINTVAL     "L'entier configuré n'est pas valide."
+    IDS_ERROR_NEWBOOLVAL    "L'entier configuré n'est pas compris entre 0 et 2."
+    IDS_ERROR_INTLISTTYPE   "Le type de paramètre indexé n'est pas une liste d'entiers."
+    IDS_ERROR_NOREMOVESEL   "Il n'y a plus de sélection à retirer."
+    IDS_ERROR_STRTYPE       "Le type de paramètre indexé n'est pas une chaîne de caractères."
+    IDS_ERROR_STRSELECT     "Le type de paramètre indexé n'est pas une chaîne de caractères, mais une liste de chaînes de caractères."
+    IDS_ERROR_STRLISTTYPE   "Le type de paramètre indexé n'est pas une liste de chaînes de caractères."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_NEWSTRVAL     "La chaîne de caractères configurée n'est pas valide."
+    IDS_ERROR_SELECTINT     "Le type de paramètre indexé n'est pas une liste d'entiers, mais un entier."
+    IDS_ERROR_SELECTSTR     "Le type de paramètre indexé n'est pas une liste de chaînes de caractères, mais une chaîne de caractères."
+    IDS_ERROR_NOSELECTION   "Il n'y a pas de sélection."
+    IDS_LICENSE             "Art. L1:\n_ Le Kit mHelp ou tout logiciel supportant cette aide ne peut pas être commercialisé, et\ndoit donc être utilisé uniquement dans un cadre personnel, ou interne, si il s'agit d'une\nentreprise, d'une association, ou d'un quelconque service publique ou organisme.\n\nArt. L2:\n_ Toutes reproductions ou copies du Kit mHelp est illicite, car le programme a été déposé\nà l'Agence pour la Protection des Programmes (APP), et est donc soumis au code de la propriété\nintellectuelle (DISPOSITIONS RELATIVES AUX LOGICIELS ET BASES DE DONNEES).\n\nArt. L3:\n_ Le procédé qui permet de mettre en oeuvre ce type d'aide et d'assistance a été breveté,\nà de l'Institut National de la Propriété Insdustrielle (INPI), et à de l'Office Européen\ndes Brevets (OEB). Pour exploiter ce type d'aide et d'assistance vous devez donc prendre\ncontact avec moi, pour que l'on trouve un accord sur une éventuelle licence d'exploitation.\n\nPascal Viguié\n3, rue du Château\n34830 Clapiers\nTEL: 09.50.46.14.86\nGSM: 06.71.90.79.87\nE-MAIL: viguie.pascal@gmail.com"
+    IDS_MUST_CALL_MAINACTIVE 
+                            "Attention ! La procédure ""mHelp_MainActive"" n'a pas\nété appelée, lors de l'activation de l'interface principale."
+    IDS_CLOSE               "Fermer"
+    IDS_SAVE_SUCCESSFUL     "La tâche a été enregistré avec succès !"
+    IDS_SRVMSG_TERMINATE    "Etes vous sûr de vouloir arrêter le processus\nde création de macros ?"
+    IDS_AUTOLNCH_YES        "Oui"
+    IDS_CONFIRM_DELETING    "Etes-vous sûr de vouloir supprimer cette tâche, et détruire\nainsi toutes les macros favorites liées à celle-ci, y compris\ncelles enregistrées dans le fichier et celles définies dans la\nséquence de déclenchement automatique ?"
+    IDS_DELETING_FAILED     "Une erreur est intervenue durant la destruction de\nla macro ! Le fichier mHelp contenant celle-ci doit\nêtre corrompu."
+    IDS_MHELP_ALOPENNED     "Impossible de créer ou de détruire une macro! Une interface\nprincipale mHelp est actuellement ouverte sur une autre\napplication, interdisant ainsi toutes opérations de création\nou de suppression. Veuillez fermer cette ou ces interfaces\nmHelp, avant de pouvoir réaliser ces opérations."
+    IDS_LOCK_DHPOPEN        "Impossible d'ouvrir l'interface mHelp !\nLe système est actuellement en cours de\ncréation ou de lancement d'une macro."
+    IDS_FORCE_DHPCLOSE      "Une macro est en cours de lancement ou de création!\nL'interface principale mHelp vat donc être fermée."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,421 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_CFGCTRL DIALOGEX 0, 0, 363, 374
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration du contrôle"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Appliquer",IDC_APPLY,250,355,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "Fermer",IDCANCEL,308,355,50,14
+    EDITTEXT        IDC_EDIT_MSG,188,15,155,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TYPEFLAG,100,135,62,13,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BORNE,100,151,62,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DESCRIPTION,15,120,147,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Tab1",IDC_CTRL_TAB,"SysTabControl32",TCS_OWNERDRAWFIXED,4,2,167,35
+    ICON            "",IDC_CTRL_ICON,195,123,20,20,NOT WS_VISIBLE,WS_EX_CLIENTEDGE
+    LTEXT           "Message lorsque le contrôle est désactivé ou invisible :",IDC_STATIC_MSG,182,2,176,8,NOT WS_VISIBLE
+    GROUPBOX        "Static",IDC_STATIC_CTRL,188,110,155,49
+    LTEXT           "Nom du produit :",IDC_STATIC_PRODUCT,223,121,57,8
+    LTEXT           "ClassName",IDC_VIEW_CLASS,284,121,52,8
+    LTEXT           "Version :",IDC_STATIC_VERSION,225,132,31,8
+    LTEXT           "Version",IDC_VERSION_CTRL,259,132,74,8
+    GROUPBOX        "Configuration du contrôle :",IDC_FRAME_ABOUTCFG,188,162,155,18
+    LTEXT           "Description :",IDC_STATIC_DESCRIPTION,224,144,42,8
+    LTEXT           "Description",IDC_DESCRIPTION_CTRL,269,144,66,8
+    CONTROL         "Message affiché && arrêt du processus",IDC_RADIO_VIEWMSG_STOP,
+                    "Button",BS_AUTORADIOBUTTON,188,56,147,11
+    CONTROL         "Message affiché && poursuite du processus",IDC_RADIO_VIEWMSG_CONTINUE,
+                    "Button",BS_AUTORADIOBUTTON,187,70,152,9
+    CONTROL         "Pas de message && poursuite du processus",IDC_RADIO_NOMSG,
+                    "Button",BS_AUTORADIOBUTTON,187,84,151,8
+    LTEXT           "Type de paramètre :",IDC_STATIC_STATETYPE,15,137,81,10
+    LTEXT           "Limite :",IDC_STATIC_LIMITE,16,153,29,9
+    LTEXT           "Description :",IDC_STATIC_STATEDESCRIPTION,15,109,40,8
+    GROUPBOX        "Information sur l'état paramétrable du contrôle :",IDC_STATIC_STATEINFO,10,97,157,72
+    GROUPBOX        "Configuration de l'état paramétrable du contrôle :",IDC_FRAME_STATE,11,184,332,166
+    CONTROL         "Activé",IDC_CHECK_ACTIVE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,20,198,56,10
+    CONTROL         "Désactivé",IDC_CHECK_INACTIVE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,20,210,64,9
+    CONTROL         "Change d'état",IDC_CHECK_CHANGEINT,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,20,222,60,9
+    LTEXT           "Etat :",IDC_STATIC_STATE,86,197,75,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_STATE,85,208,77,13,ES_AUTOHSCROLL | ES_OEMCONVERT | NOT WS_VISIBLE
+    CONTROL         "Slider1",IDC_SLIDER_CFG,"msctls_trackbar32",TBS_AUTOTICKS | NOT WS_VISIBLE | WS_TABSTOP,17,239,148,18
+    CONTROL         "Contenu fixe",IDC_RADIO_FIXED,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,21,267,61,10
+    CONTROL         "Saisi par l'utilisateur",IDC_RADIO_USER,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,21,279,73,10
+    EDITTEXT        IDC_MULTI_EDIT,99,267,61,24,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | NOT WS_VISIBLE
+    PUSHBUTTON      "Ajouter",IDC_ADD_MULTILIST,180,238,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Retirer",IDC_REMOVE_MULTILIST,238,238,50,14,NOT WS_VISIBLE
+    CONTROL         "List1",IDC_LIST_RADIO,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_TABSTOP,18,296,109,46,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Lier",IDC_LINK_ITEM,135,296,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Délier",IDC_UNLINK_ITEM,135,314,50,14,NOT WS_VISIBLE
+    CONTROL         "Attendre contrôle actif && affiche message (Max délai)",IDC_RADIO_DELAYMSG,
+                    "Button",BS_AUTORADIOBUTTON,187,97,151,8
+    EDITTEXT        IDC_EDIT_NOSTATE_MSG,13,44,153,33,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "Message && arrêt si le changement de sélection a échoué",IDC_CHECK_NOSTATE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,14,83,151,10
+    PUSHBUTTON      "Aide  (F1)",IDC_LAUNCH_DOC,4,355,50,14
+    LISTBOX         IDC_LISTBOX_MULTILIST,180,198,106,34,LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_MESSAGE DIALOG 0, 0, 195, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Message mHelp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Fermer",IDOK,142,86,50,14
+    EDITTEXT        IDC_EDIT_VIEWMSG,3,39,189,44,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Impossible de poursuivre le processus !",IDC_STATIC,32,14,158,11
+    ICON            IDI_ICON_WARNING,IDC_STATIC,7,8,20,20
+    DEFPUSHBUTTON   "Continuer",IDC_CONTINUE_BTN,86,86,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLG_CFGCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 358
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 192
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "Réalisation : VIGUIE Pascal"
+            VALUE "CompanyName", "Unknow Software©"
+            VALUE "FileDescription", "mHelp Controls Supported"
+            VALUE "FileVersion", "1.3"
+            VALUE "InternalName", "mHpCtrl"
+            VALUE "LegalCopyright", "Copyright © 1999 - 2004"
+            VALUE "LegalTrademarks", "mHelp (TM)"
+            VALUE "OriginalFilename", "mHpCtrl.dll"
+            VALUE "ProductName", "Unknow Software© mHelp"
+            VALUE "ProductVersion", "1.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MENU           ICON                    "Ctrls\\Menu\\menu.ico"
+IDI_ICON_EXE            ICON                    "Ctrls\\ChangeExe\\iconexe.ico"
+IDI_ICON_BUTTON         ICON                    "ctrls\\button\\button.ico"
+IDI_ICON_CHECK          ICON                    "Ctrls\\Button\\check.ico"
+IDI_ICON_RADIO          ICON                    "Ctrls\\Button\\Radio.ico"
+IDI_ICON_COMBO          ICON                    "Ctrls\\ComboBox\\combo.ico"
+IDI_ICON_EDIT           ICON                    "Ctrls\\EditBox\\edit.ico"
+IDI_ICON_MULTILIST      ICON                    "Ctrls\\ListBox\\multilist.ico"
+IDI_ICON_SINGLELIST     ICON                    "Ctrls\\ListBox\\singlelist.ico"
+IDI_ICON_SLIDER         ICON                    "Ctrls\\Slider\\slider.ico"
+IDI_ICON_WARNING        ICON                    "warning.ico"
+IDI_ICON_SEP            ICON                    "sep.ico"
+IDI_ICON_RICHEDIT       ICON                    "Ctrls\\RichEdit\\editrich.ico"
+IDI_ICON_LISTVIEW       ICON                    "Ctrls\\ListView\\listview.ico"
+IDI_ICON_TABCTRL        ICON                    "Ctrls\\TabCtrl\\TabCtrl.ico"
+IDI_ICON_TOOLBAR        ICON                    "Ctrls\\ToolBar\\ToolBar.ico"
+IDI_ICON_TREEVIEW       ICON                    "Ctrls\\TreeView\\TreeView.ico"
+IDI_ICON_DEFAULT        ICON                    "Default.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CLICK               BITMAP                  "click.bmp"
+IDB_MOUSE               BITMAP                  "souris.bmp"
+IDB_PRESS               BITMAP                  "realpush.bmp"
+IDB_UNPRESS             BITMAP                  "unpress.bmp"
+IDB_ALTGR_PRESS         BITMAP                  "altgr.bmp"
+IDB_SHIFT_PRESS         BITMAP                  "shift.bmp"
+IDB_DBLCLICK            BITMAP                  "dblclick.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_PRESS          WAVE                    "press.wav"
+IDR_WAVE_UNPRESS        WAVE                    "unpress.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_COLUMN_TYPE         "Type"
+    IDS_COLUMN_ROW          "Rang"
+    IDS_COLUMN_STATE        "Etat/Sélection(s)"
+    IDS_COLUMN_APPLI        "Application"
+    IDS_TAB_COMMON          "Commun"
+    IDS_TAB_ABOUT           "A Propos"
+    IDS_D2D_END_DRAW        "D2D: Impossible d'afficher le curseur D2D!"
+    IDS_UNDEFINED_STATE     "Etat non défini..."
+    IDS_CTLMGMT_LOAD_ERROR  "Erreur: Echec du chargement"
+    IDS_CTLMGMT_LOAD_SUCCEED "Chargement réussi"
+    IDS_CTLMGMT_LOAD_NOCLASS "Classe(s) non définie(s)!"
+    IDS_CTLMGMT_LOAD_NOVERSION "Version non définie!"
+    IDS_STRING_CTRL         " contrôle :"
+    IDS_CTRL_INACTIF        "Le contrôle suivant est désactivé ou invisible."
+    IDS_TASKLISTE_NOREPEAT  "Impossible de lancer cette tâche en mode répétition, car\nla fenêtre initiale est différente de la fenêtre finale !"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TASKLISTE_CREATE    "Impossible de créer la liste des tâches car\nle fichier d'extension "".mhf"" comporte une\nerreur..."
+    IDS_CREATE_TASK1        "Impossible d'ajouter cet évènement ! Ce contrôle n'est\npas géré par l'aide mHelp. Utilisez la procédure\n""mHelp_AddUnSupport"", avec les paramètres suivant :\n\n_ """
+    IDS_CTRL_MENU           "Menu"
+    IDS_PRODUCT_MENU        " "
+    IDS_VERSION_MENU        " "
+    IDS_DESCRIPTION_MENU    " "
+    IDS_CTRL_BUTTON         "Bouton"
+    IDS_PRODUCT_BUTTON      "Microsoft"
+    IDS_VERSION_BUTTON      "4.5"
+    IDS_DESCRIPTION_BUTTON  " "
+    IDS_CTRL_LIST           "ListBox"
+    IDS_PRODUCT_LIST        "Microsoft"
+    IDS_VERSION_LIST        "4.5"
+    IDS_DESCRIPTION_LIST    " "
+    IDS_CTRL_COMBO          "ComboBox"
+    IDS_PRODUCT_COMBO       "Microsoft"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VERSION_COMBO       "4.5"
+    IDS_DESCRIPTION_COMBO   " "
+    IDS_CTRL_SLIDER         "Slider / TrackBar"
+    IDS_PRODUCT_SLIDER      "Microsoft"
+    IDS_VERSION_SLIDER      "4.5"
+    IDS_DESCRIPTION_SLIDER  " "
+    IDS_CTRL_EDIT           "EditBox"
+    IDS_PRODUCT_EDIT        "Microsoft"
+    IDS_VERSION_EDIT        "4.5"
+    IDS_DESCRIPTION_EDIT    " "
+    IDS_VIEW_CHANGEEXE      "Change d'application"
+    IDS_VIEW_MENU           "Menu / PopupMenu"
+    IDS_VIEW_BUTTON         "Bouton"
+    IDS_VIEW_LIST_SINGLE    "Single listbox"
+    IDS_VIEW_COMBO          "Combobox"
+    IDS_VIEW_SLIDER         "Slider / Trackbar"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VIEW_EDIT           "Editbox"
+    IDS_VIEW_CHECK          "Checkbox"
+    IDS_VIEW_RADIO          "Radiobox"
+    IDS_VIEW_LIST_MULTI     "Multiple listbox"
+    IDS_CREATE_MULTILISTE   "Impossible de gérer plus de 500 sélections\ndans une multiple listbox."
+    IDS_NO_STATE            "Pas d'état"
+    IDS_INACTIVE            "Désactiver"
+    IDS_NO_SELECTION        "Pas de sélection"
+    IDS_ACTIVE              "Activer"
+    IDS_CHANGED_STATE       "Changer d'état"
+    IDS_D2D_CREATE_DC       "D2D: Impossible de créer le DC de l'écran!"
+    IDS_D2D_COMPATIBLE_DC   "D2D: Impossible de créer le DC compatible!"
+    IDS_CTRL_CHANGEEXE      "Change d'application :"
+    IDS_INDETERMINATE_STATE "Indéterminer"
+    IDS_WARNING_NOSAVE      "Attention ! Etes-vous sûr de vouloir\nquitter sans sauvegarder ?"
+    IDS_TAB_STATE           "Etat"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VALUE_ASSIGNED      "Valeur de l'état :"
+    IDS_VALUE_INDETERMINATE "Indéterminé"
+    IDS_SLIDER_VALUE        "Valeur de la position :"
+    IDS_VALUE_CONTENTS      "Contenu de la zone d'édition :"
+    IDS_VALUE_DESCRIPTION   "Description du contenu :"
+    IDS_VALUE_STRSEL        "Chaîne de caractères à sélectionner :"
+    IDS_VALUE_STRSELS       "Chaîne(s) de caractères à sélectionner :"
+    IDS_VALUE_CTRLROW       "Rang du Radiobox :"
+    IDS_COLUMN_UNLINKED     "Radioboxs sélectionnés"
+    IDS_CTRL_MAXRADIO1      "Attention ! Vous ne pouvez pas sélectionner le "
+    IDS_CTRL_MAXRADIO2      "° Radiobox\ncar il n'y a pas tant de Radiobox à sélectionner."
+    IDS_ADD_FINISHED        "Impossible d'ajouter un évènement ! Cette\nmacro a déjà été sauvegardé et fermé."
+    IDS_ADD_CUSTOMING       "Impossible d'ajouter cet évènement ! La macro\nest en cours de configuration, à partir d'une\nautre application."
+    IDS_EXE_NOTFOUND        "Impossible de lancer l'application suivante."
+    IDS_COLUMN_VISIBLE      "Visible"
+    IDS_STRING_TRUE         "Vrai"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DIFF_WINDOW         "L'activation de cette fenêtre n'est pas autorisée !"
+    IDS_VIEW_TABCTRL        "TabCtrl"
+    IDS_PRODUCT_TABCTRL     "Microsoft"
+    IDS_VERSION_TABCTRL     "4.5"
+    IDS_DESCRIPTION_TABCTRL " "
+    IDS_CTRL_TABCTRL        "TabCtrl"
+    IDS_CREATE_TASK2        """\n\nCela permettra de désactiver ce message, si il s'agit d'un\ncontrôle sur lequel l'utilisateur ne peut intervenir, ou\nen attendant que ce contrôle soit géré par l'aide mHelp."
+    IDS_TASKLISTE_DIFFEXE   "Impossible de lancer cette tâche à partir de cette\napplication ! Vous pouvez la lancer à partir de\nl'application suivante :\n\n"
+    IDS_STOP_PROCESS        "Arrêt"
+    IDS_MAX_DELAY           "Le délai maximum entre 2 tâches a été dépassé."
+    IDS_CHARACTERS          " caractères"
+    IDS_PRODUCT_LISTVIEW    "Microsoft"
+    IDS_VERSION_LISTVIEW    "4.5"
+    IDS_DESCRIPTION_LISTVIEW " "
+    IDS_CTRL_LISTVIEW       "ListView"
+    IDS_VIEW_LISTVIEW       "ListView"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VIEW_TREEVIEW       "TreeView"
+    IDS_CTRL_TREEVIEW       "TreeView"
+    IDS_PRODUCT_TREEVIEW    "Microsoft"
+    IDS_VERSION_TREEVIEW    "4.5"
+    IDS_DESCRIPTION_TREEVIEW " "
+    IDS_STRING_FALSE        "Faux"
+    IDS_VIEW_TOOLBAR_BTN    "ToolBar - Bouton"
+    IDS_CTRL_TOOLBAR        "ToolBar"
+    IDS_PRODUCT_TOOLBAR     "Microsoft"
+    IDS_VERSION_TOOLBAR     "4.70"
+    IDS_DESCRIPTION_TOOLBAR " "
+    IDS_VIEW_TOOLBAR_CHK    "ToolBar - CheckBox"
+    IDS_VIEW_TOOLBAR_RAD    "ToolBar - RadioBox"
+    IDS_VIEW_TOOLBAR_CBO    "ToolBar - ComboBox"
+    IDS_VIEW_TOOLBAR_DDW    "ToolBar - DropDown"
+    IDS_CTRL_NOSTATE        "L'aide mHelp n'a pas réussie à changer l'état du contrôle."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VALUE_COMMANDLINE   "Ligne de commandes :"
+    IDS_D2D_COMPATIBLE_BMP  "D2D: Impossible de créer la BMP compatible!"
+    IDS_D2D_BITBLT          "D2D: Impossible d'accéder au bloc de bits de l'écran!"
+    IDS_D2D_SCREEN_BUFFER   "D2D: Impossible de récupérer les données de l'écran!"
+    IDS_D2D_CREATE_BBUFFER  "D2D: Impossible de créer l'image du fond de l'écran!"
+    IDS_D2D_COPY_BBUFFER    "D2D: Impossible de copier les données du fond de l'écran!"
+    IDS_D2D_CREATE_CURSOR   "D2D: Impossible de créer l'image du curseur D2D!"
+    IDS_D2D_LOAD_CURSOR     "D2D: Impossible de charger l'image du curseur!"
+    IDS_D2D_GET_CBUFFER     "D2D: Impossible de récupérer les données du cureur!"
+    IDS_D2D_COPY_CBUFFER    "D2D: Impossible de copier les données du curseur!"
+    IDS_D2D_FACTORY         "D2D: Impossible de créer l'usine D2D!"
+    IDS_D2D_RENDERTARGET    "D2D: Impossible de créer la cible du rendu D2D!"
+    IDS_D2D_RT_BINDDC       "D2D: Impossible de lier la cible du rendu D2D au DC!"
+    IDS_CTLMGMT_LOAD_NONAME "Nom(s) du contrôle non défini(s)!"
+    IDS_ERROR_GETSYSFOLDER  "Erreur: Impossible de récupérer le répertoire système!\nEchec du chargement des DLLs permettant à\nmHelp de gérer les contrôles!"
+    IDS_HTML_SUBMIT         "Démarrer"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HTML_TASKDESC       "Ajoutez une description de la macro ici..."
+    IDS_HTML_STATEDESC      "Ajouter une description de cet état ici..."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

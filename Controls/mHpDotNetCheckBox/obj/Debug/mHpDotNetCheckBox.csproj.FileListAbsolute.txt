@@ -1,0 +1,4 @@
+D:\Dev\mHelp\Controls\mHpDotNetCheckBox\bin\Debug\x64\mHpDotNetCheckBox.dll
+D:\Dev\mHelp\Controls\mHpDotNetCheckBox\bin\Debug\x64\mHpDotNetCheckBox.pdb
+D:\Dev\mHelp\Controls\mHpDotNetCheckBox\bin\Debug\x64\mHpDotNetCtrl.dll
+D:\Dev\mHelp\Controls\mHpDotNetCheckBox\bin\Debug\x64\mHpDotNetCtrl.pdb

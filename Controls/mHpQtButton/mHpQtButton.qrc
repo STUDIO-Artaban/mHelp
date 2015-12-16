@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+      <file alias="mHpButtonIcon">mHpButton.ico</file>
+      <file alias="mHpBtnCheckIcon">mHpCheckBtn.ico</file>
+    </qresource>
+</RCC>

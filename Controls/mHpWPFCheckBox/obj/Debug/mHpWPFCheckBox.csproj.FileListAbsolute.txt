@@ -1,0 +1,4 @@
+D:\Dev\mHelp\Controls\mHpWPFCheckBox\bin\Debug\x64\mHpWPFCheckBox.dll
+D:\Dev\mHelp\Controls\mHpWPFCheckBox\bin\Debug\x64\mHpWPFCheckBox.pdb
+D:\Dev\mHelp\Controls\mHpWPFCheckBox\bin\Debug\x64\mHpWPFCtrl.dll
+D:\Dev\mHelp\Controls\mHpWPFCheckBox\bin\Debug\x64\mHpWPFCtrl.pdb
