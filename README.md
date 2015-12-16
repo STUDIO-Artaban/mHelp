@@ -1,5 +1,4 @@
 # [mHelp (DynHelp)](https://github.com/STUDIO-Artaban/mHelp)
--------------
 **mHelp** is a Windows **SDK** that easily includes a dynamic help and a scalable macros system to your applications.
 
 This project, previously called **DynHelp SDK**, started during the 1999 year and is based on a simple concept: everything a user can do on the UI of an application can be done programmatically.
