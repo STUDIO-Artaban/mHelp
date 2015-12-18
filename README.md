@@ -19,3 +19,16 @@ MainCell=new CWndCell(hNewWnd,SetWindowLongPtr(hNewWnd,GWLP_WNDPROC,NewProc));
 Like this, during a macro creation, it is possible to identify on which UI control the user has acted, and to save it into a file. File that will be read in order to reproduce what the user has done, when a macro is launched.
 
 As you understood, the **mHelp SDK** depends on the knowledge of UI controls your application contains. It is the reason why in 2012 the **SDK** has been updated to extract all the management of these controls, from the **mHelp** DLL to external DLLs.
+
+See the [**mHelp(DynHelp)**](http://vp.magellan.free.fr/DynHelp) web site and its [documentation](http://vp.magellan.free.fr/DynHelp/index.php?Lang=fr&Chapter=Doc).
+
+## **mHelp.sln** (description)
+
+* **JmHelp** project contains the mHelp JNI declaration for Java applications<br>
+Dependency: mHelp
+* **mHelp** project contains the mHelp core<br>
+Dependencies: mHpCtrl, mHpPak
+* **mHpCrypt** project contains a console application that crypts .mhf files (mHelp files)<br>
+Dependencies: mHpPak
+* **mHpUncrypt** project contains a console application that uncrypts .mhf files (mHelp files)<br>
+Dependencies: mHpPak
