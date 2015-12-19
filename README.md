@@ -43,3 +43,24 @@ Dependencies: mHpPak.
 * **mHpWebClient** project contains the mHelp declaration for applications using web browser as UI.
 * **mHpWPFCtrl** project contains the mHelp interface for WPF controls.
 * **strlib** project contains a string definition (CStrlib class)
+
+## **mHpQt.sln** (description)
+
+* **mHpQtCtrlMgmt** project contains the mHelp interface for Qt controls management.<br>
+Dependencies: QtmHpCtrl.
+* **QtmHpCtrl** project contains the mHelp interface for Qt controls.
+
+## **Controls/mHpCtrls.sln** (description)
+
+* **mHpDotNetButton** project contains the .NET button management for mHelp<br>
+Dependency: mHpDotNetCtrl.
+* **mHpDotNetCheckBox** project contains the .NET checkbox management for mHelp<br>
+Dependency: mHpDotNetCtrl.
+* **mHpWin32Button** project contains the Win32 button management for mHelp<br>
+Dependency: mHpCtrlMgmt.
+* **mHpWin32Slider** project contains the Win32 slider management for mHelp<br>
+Dependency: mHpCtrlMgmt.
+* **mHpWPFButton** project contains the WPF button management for mHelp<br>
+Dependency: mHpWPFCtrl.
+* **mHpWPFCheckBox** project contains the WPF checkbox management for mHelp<br>
+Dependency: mHpWPFCtrl.
