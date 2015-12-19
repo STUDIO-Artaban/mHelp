@@ -77,4 +77,3 @@ Dependency: QtmHpCtrl.
 * **AppWPF** project contains a WPF application using mHelp.
 * **WinApp** project contains a Win32 application using mHelp.
 * **wordpad** project contains a MFC application using mHelp.
-* 
