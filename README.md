@@ -64,3 +64,17 @@ Dependency: mHpCtrlMgmt.
 Dependency: mHpWPFCtrl.
 * **mHpWPFCheckBox** project contains the WPF checkbox management for mHelp<br>
 Dependency: mHpWPFCtrl.
+
+## **Controls/mHpQtCtrls.sln** (description)
+
+* **mHpQtButton** project contains the Qt button management for mHelp<br>
+Dependency: QtmHpCtrl.
+
+## **Example/mHpExample.sln** (description)
+
+* **AppCSHARP** project contains a c# application using mHelp.
+* **AppVBNET** project contains a VB.NET application using mHelp.
+* **AppWPF** project contains a WPF application using mHelp.
+* **WinApp** project contains a Win32 application using mHelp.
+* **wordpad** project contains a MFC application using mHelp.
+* 
