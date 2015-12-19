@@ -24,11 +24,22 @@ See the [**mHelp(DynHelp)**](http://vp.magellan.free.fr/DynHelp) web site and it
 
 ## **mHelp.sln** (description)
 
-* **JmHelp** project contains the mHelp JNI declaration for Java applications<br>
-Dependency: mHelp
-* **mHelp** project contains the mHelp core<br>
-Dependencies: mHpCtrl, mHpPak
-* **mHpCrypt** project contains a console application that crypts .mhf files (mHelp files)<br>
-Dependencies: mHpPak
-* **mHpUncrypt** project contains a console application that uncrypts .mhf files (mHelp files)<br>
-Dependencies: mHpPak
+* **JmHelp** project contains the mHelp JNI declaration for Java applications.<br>
+Dependency: mHelp.
+* **mHelp** project contains the mHelp core.<br>
+Dependencies: mHpCtrl, mHpPak.
+* **mHpCrypt** project contains a console application that crypts .mhf files (mHelp files).<br>
+Dependencies: mHpPak.
+* **mHpUncrypt** project contains a console application that uncrypts .mhf files (mHelp files).<br>
+Dependencies: mHpPak.
+* **mHpCtrl** project contains the management of UI controls.<br>
+Dependency: strlib, mHpPak, mHpCtrlMgmt.
+* **mHpCtrlMgmt** project contains the mHelp interface for controls management.
+* **mHpDotNetCtrl** project contains the mHelp interface for .NET controls management.
+* **mHpPak** project contains mHelp tools.<br>
+Dependency: strlib.
+* **mHpUncrypt** project contains a console application that uncrypts .mhf files (mHelp files).<br>
+Dependencies: mHpPak.
+* **mHpWebClient** project contains the mHelp declaration for applications using web browser as UI.
+* **mHpWPFCtrl** project contains the mHelp interface for WPF controls.
+* **strlib** project contains a string definition (CStrlib class)
