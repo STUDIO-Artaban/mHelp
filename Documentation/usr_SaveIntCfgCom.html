@@ -1,0 +1,217 @@
+<!- Interface de Configuration: Onglet "Commun" - DynHelp SDK V1.21 - FR ->
+<html>
+<head>
+<title>Interface de Configuration: Onglet "Commun"</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Interface de Configuration: Onglet "Commun"</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	L'onglet "Commun" de l'interface de configuration, vous permet de choisir le comportement à suivre dans le cas où le contrôle en cours
+	de configuration, serait invisible ou inactif durant le lancement de la macro. Il vous permet également de définir le message qui sera
+	affiché dans cette éventualité.<br><br>
+	<center><img src="CfgCom.jpg" border="0" usemap="#CfgCom"></center><br>
+	<map name="CfgCom">
+		<area shape=RECT coords="63,35,100,51" href="usr_SaveIntCfgBool.html">
+		<area shape=RECT coords="105,35,155,51" href="#About">
+		<area shape=RECT coords="12,75,306,128" href="#MsgDisable">
+		<area shape=RECT coords="10,136,306,150" href="#MsgStop">
+		<area shape=RECT coords="10,156,306,170" href="#MsgContinue">
+		<area shape=RECT coords="10,176,306,190" href="#NoMsgContinue">
+		<area shape=RECT coords="10,196,306,210" href="#WaitMsg">
+		<area shape=RECT coords="7,337,93,361" href="#Help">
+		<area shape=RECT coords="135,338,218,359" href="#Apply">
+		<area shape=RECT coords="228,338,311,359" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b>Etat</b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		L'onglet "Etat" vous permet de configurer la valeur du paramètre du contrôle, s'il s'agit d'un contrôle paramétrable (voir
+		<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètres</a>). Dans le cas contraire, cet onglet n'est
+		pas visible.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="About">A Propos</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Onglet contenant des informations sur le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="MsgDisable">Message contrôle non prêt</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Message affiché dans l'éventualité où le contrôle serait invisible ou inactif.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="MsgStop">Message affiché & arrêt du processus</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Option qui vous permet de choisir le comportement à suivre dans le cas où le contrôle serait invisible ou inactif, et qui consiste à
+		afficher le message ci-dessus, avant d'arrêter le processus DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="MsgContinue">Message affiché & poursuite du processus</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Option qui vous permet de choisir le comportement à suivre dans le cas où le contrôle serait invisible ou inactif, et qui consiste à
+		afficher le message ci-dessus, avant de poursuivre le processus DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="NoMsgContinue">Pas de message & poursuite du processus</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Option qui vous permet de choisir le comportement à suivre dans le cas où le contrôle serait invisible ou inactif, et qui consiste à
+		ne pas afficher le message ci-dessus, et de poursuivre le processus DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="WaitMsg">Attendre contrôle actif & affiche message (Max délai)</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Option qui vous permet de choisir le comportement à suivre dans le cas où le contrôle serait invisible ou inactif, et qui consiste à
+		afficher le message ci-dessus, avant de poursuivre le processus DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Help">Aide (F1)</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de lancer l'aide utilisateur du système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Apply">Appliquer</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet d'appliquer les changements configurés pour le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Close">Fermer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de fermer l'interface.
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table><br>
+	Voici ci-dessous l'onglet "Commun" de l'interface de configuration, lorsque le contrôle sélectionné est de type ListBox, ListView, TreeView,
+	etc... (voir <a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètres</a>). Le point commun entre ces contrôles
+	est que leur état dépend d'une sélection.<br><br>
+	<center><img src="CfgComSel.jpg" border="0" usemap="#CfgComSel"></center><br>
+	<map name="CfgComSel">
+		<area shape=RECT coords="63,35,100,51" href="usr_SaveIntCfgBool.html">
+		<area shape=RECT coords="105,35,155,51" href="#About">
+		<area shape=RECT coords="12,75,306,128" href="#MsgDisable">
+		<area shape=RECT coords="10,136,306,150" href="#MsgStop">
+		<area shape=RECT coords="10,156,306,170" href="#MsgContinue">
+		<area shape=RECT coords="10,176,306,190" href="#NoMsgContinue">
+		<area shape=RECT coords="10,196,306,210" href="#WaitMsg">
+		<area shape=RECT coords="12,219,306,272" href="#MsgSelect">
+		<area shape=RECT coords="9,280,306,294" href="#SelOpt">
+		<area shape=RECT coords="7,337,93,361" href="#Help">
+		<area shape=RECT coords="135,338,218,359" href="#Apply">
+		<area shape=RECT coords="228,338,311,359" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b><a name="MsgSelect">Message échec de la sélection</a></b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Message affiché dans l'éventualité où le processus DynHelp est arrêté (voir option ci-dessous), car il n'est pas parvenu à sélectionner
+		l'élément souhaité par l'utilisateur (cet élément n'est pas contenu dans le contrôle).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="SelOpt">Message & arrêt si le changement de sélection à échoué</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Option permettant d'arrêter le processus DynHelp dans le cas où il ne parviendrait pas à changer l'état du contrôle, car l'élément à
+		sélectionner n'est pas contenu dans ce contrôle.
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Remarques</b><br><br><!- ******************************************************************************************************************* Remarques ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	L'option qui consiste à attendre que le contrôle soit visible ou actif avant de poursuivre le processus DynHelp, dépend de la configuration du
+	délai d'attente maximum entre deux actions (voir <a href="usr_MainIntCfg.html#Delay">Interface Principale: Onglet "Configuration"</a>). Une fois
+	ce délai dépassé, le message est alors affiché avant d'arrêter le processus DynHelp.<br><br>Les options permettant de définir le comportement à
+	adopter lorsqu'un contrôle n'est pas visible ou désactivé, ne sont pas autorisées pour un "contrôle" de type "change d'application", car toutes
+	actions sur ce logiciel ne seront pas réalisables si le système DynHelp ne parvient pas à le lancer, ce qui limite le comportement à suivre, à
+	l'affichage du message et à l'arrêt du processus DynHelp.<br>D'autres contrôles comme les Boutons ou les Menus, ont également les options de
+	poursuite de processus désactivées, car les actions réalisées par ce type de contrôle sont en générale liées à des changements au niveau du
+	comportement et de la gestion de l'interface, rendant impossible la poursuite du processus de lancement de macros.
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_CfgInterface.html">Description de l'Interface de Configuration des Contrôles</a><br>
+	<a href="usr_SaveIntCfgInt.html">Interface de Configuration: Onglet "Etat" de Type Booléen</a><br>
+	<a href="usr_SaveIntCfgInt.html">Interface de Configuration: Onglet "Etat" de Type Entier</a><br>
+	<a href="usr_SaveIntCfgStr.html">Interface de Configuration: Onglet "Etat" de Type Chaîne de caractères</a><br>
+	<a href="usr_SaveIntCfgMltStr.html">Interface de Configuration: Onglet "Etat" de Type Liste de Chaînes de caractères</a><br>
+	<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a><br>
+	<a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a><br>
+	<a href="usr_SaveIntParam.html">Interface d'Enregistrement: Paramètres de la Macro</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>

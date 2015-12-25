@@ -1,0 +1,85 @@
+<!- Description de l'Outil "DhpDgnst.exe" - DynHelp SDK V1.2 - FR ->
+<html>
+<head>
+<title>Description de l'Outil "DhpDgnst.exe"</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Description de l'Outil "DhpDgnst.exe"</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	Cette application permet de réaliser la tâche ci-dessous, après une erreur ayant entraîné l'arrêt d'un des processus du système DynHelp de
+	manière non conforme :<br><br>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="20"><img src="Puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		Réinitialiser l'état actuel du système DynHelp et de ses processus.
+	</font></td>
+	</tr>
+	</table><br>
+	Lorsqu'un processus de création ou de lancement de macro est effectué, le système DynHelp stock des informations dans la base de registres
+	assurant ainsi le partage de ces processus d'une application à une autre. L'intérêt de cet outil est de permettre à l'utilisateur d'initialiser
+	ces clés dans le cas ou l'un de ces processus ne se termine pas correctement, après une erreur quelconque.<br><br>En effet, les opérations de
+	création, de suppression et de lancement de macros ne peuvent être réalisées que sous certaines conditions, décrites ci-dessous :<br><br>
+	<table bordercolor="#B0B0B0" border="1" cellpadding="2" cellspacing="0" width="100%">
+	<tr>
+	<td align="center" width="180" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2"><b>Opérations</b></font></td>
+	<td align="center" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2"><b>Conditions nécessaires</b></font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Création d'une macro
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Pas de macro en cours de création.<br>Pas de macro en cours de lancement.<br>Pas d'interface principale DynHelp ouverte.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Destruction d'une macro
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Pas de macro en cours de création.<br>Pas de macro en cours de lancement.<br>Pas d'interface principale DynHelp ouverte.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Lancement d'une macro
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Pas de macro en cours de création.<br>Pas de macro en cours de lancement.
+	</font></td>
+	</tr>
+	</table><br>
+	C'est pourquoi, sans cette initialisation le système DynHelp se comporte de manière non cohérente, les clés contenues dans la base de registres
+	lui informant qu'il est toujours en cours de création ou en cours de lancement de macro.
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_DhpDgnstInt.html">Interface de l'Outil "DhpDgnst.exe"</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!- Interface de Configuration: Onglet "Etat" de Type Entier - DynHelp SDK V1.21 - FR ->
+<html>
+<head>
+<title>Interface de Configuration: Onglet "Etat" de Type Entier</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Interface de Configuration: Onglet "Etat" de Type Entier</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	L'onglet "Etat" de l'interface de configuration, vous permet de modifier la valeur du paramètre associé à l'état d'un contrôle, initialement
+	fixée durant la création de la macro. Cette interface dépend du type de contrôle et donc du type de paramètre qui y est associé (voir
+	<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a>). Dans les exemples qui suivent il s'agit d'un
+	paramètre de type Entier (I).<br><br>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="20"><img src="Puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Contrôle de type: Slider/TrackBar</b>
+	</font></td>
+	</tr>
+	</table><br>
+	<center><img src="CfgSld.jpg" border="0" usemap="#CfgSld"></center><br>
+	<map name="CfgSld">
+		<area shape=RECT coords="9,35,58,51" href="usr_SaveIntCfgCom.html">
+		<area shape=RECT coords="105,35,155,51" href="#About">
+		<area shape=RECT coords="19,73,298,95" href="#Position">
+		<area shape=RECT coords="23,125,128,140" href="#Value">
+		<area shape=RECT coords="23,248,294,263" href="#Description">
+		<area shape=RECT coords="128,272,294,287" href="#Type">
+		<area shape=RECT coords="128,296,294,311" href="#LimitSld">
+		<area shape=RECT coords="7,337,93,361" href="#Help">
+		<area shape=RECT coords="135,338,218,359" href="#Apply">
+		<area shape=RECT coords="228,338,311,359" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b>Commun</b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Onglet "Commun" permettant de configurer le comportement à suivre dans le cas où le contrôle en cours de configuration,	serait
+		invisible ou inactif durant (voir <a href="usr_SaveIntCfgCom.html">Interface de Configuration: Onglet "Commun"</a>).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="About">A Propos</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Onglet contenant des informations sur le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Position">Position du Slider</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de modifier l'état initial du contrôle, de manière à changer la position de ce Slider lors du lancement de la macro.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Value">Valeur de la position</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Valeur du paramètre.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Description">Description</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de définir la description du paramètre (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Type">Type</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Affiche le type de paramètre (voir <a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a>).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="LimitSld">Limite</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de définir la limite du paramètre, dont la valeur par défaut est déterminée par les propriétés du Slider (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Help">Aide (F1)</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de lancer l'aide utilisateur du système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Apply">Appliquer</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet d'appliquer les changements configurés pour le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Close">Fermer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de fermer l'interface.
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table><br>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="20"><img src="Puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Contrôles de type: RadioBox, ToolBar radiobox</b>
+	</font></td>
+	</tr>
+	</table><br>
+	Lorsque l'on agit sur un contrôle de type RadioBox, c'est pour faire un choix parmi d'autres RadioBoxs. Un RadioBox seul n'a donc pas d'état
+	en soi. C'est pourquoi, cette interface vous permet de regrouper plusieurs de ces contrôles afin d'en extraire un paramètre, correspondant
+	au choix du RadioBox que vous souhaitez sélectionner.<br><br>
+	Pour ce faire, vous devez lors de la création de la macro, sélectionner l'un après l'autre tous les RadioBoxs qui sont groupés et qui forment
+	ainsi un choix d'options, puis, via l'interface d'enregistrement, configurer l'un de ces contrôles en s'assurant que les autres RadioBoxs qui
+	le précèdent ou qui le suivent dans la liste des contrôles (voir
+	<a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a>), soient bien présents.<br><br>
+	<center><img src="CfgRad.jpg" border="0" usemap="#CfgRad"></center><br>
+	<map name="CfgRad">
+		<area shape=RECT coords="9,35,58,51" href="usr_SaveIntCfgCom.html">
+		<area shape=RECT coords="105,35,155,51" href="#About">
+		<area shape=RECT coords="23,75,139,88" href="#Rad">
+		<area shape=RECT coords="143,75,178,88" href="#Row">
+		<area shape=RECT coords="22,91,180,203" href="#RadList">
+		<area shape=RECT coords="192,72,295,93" href="#Link">
+		<area shape=RECT coords="192,102,295,123" href="#Unlink">
+		<area shape=RECT coords="193,149,295,164" href="#ValueRad">
+		<area shape=RECT coords="23,248,294,263" href="#Description">
+		<area shape=RECT coords="128,272,294,287" href="#Type">
+		<area shape=RECT coords="128,296,294,311" href="#LimitRad">
+		<area shape=RECT coords="7,337,93,361" href="#Help">
+		<area shape=RECT coords="135,338,218,359" href="#Apply">
+		<area shape=RECT coords="228,338,311,359" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b><a name="Rad">Radioboxs sélectionnés</a></b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Noms des RadioBoxs sélectionnés.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Row">Rang</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Rang du RadioBox dans la liste des contrôles (voir <a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a>).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="RadList">Liste des RadioBoxs</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Liste des RadioBoxs qui précèdent ou qui suivent le contrôle à configurer, et qui représente les différents choix possibles.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Link">Lier</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de regrouper les RadioBoxs sélectionnés dans la liste des RadioBoxs.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Unlink">Délier</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de séparer les RadioBoxs regroupés et de supprimer ainsi le paramètre associé.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="ValueRad">Rang du Radiobox</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de choisir le RadioBox à sélectionner suivant sa position dans la liste des RadioBoxs regroupés (valeur du paramètre).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="LimitRad">Limite</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de définir la limite du paramètre, dont la valeur par défaut est déterminée par le nombre de RadioBoxs regroupés (voir
+		Remarques).
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table><br>
+	Une fois liées, vous pouvez alors constater qu'il n'y a plus qu'un seul de ces contrôles dans la liste des contrôles, avec pour état
+	le rang du RadioBox à sélectionner parmi les autres.<br><br>
+	Cette opération ne peut être réalisée qu'à partir de la liste des contrôles sur lequel l'utilisateur a agit (voir
+	<a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a>).
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Remarques</b><br><br><!- ******************************************************************************************************************* Remarques ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	Les zones d'édition permettant de définir la description du paramètre et de ses limites, ne peuvent être éditées que dans le cas où vous
+	souhaitez créer une macro paramétrable, et qu'il s'agit là de la configuration d'un de ses paramètres (voir
+	<a href="usr_SaveIntParam.html">Interface d'Enregistrement: Paramètres de la Macro</a>).<br><br>S'il s'agit de la configuration d'un des
+	paramètres de la future macro paramétrable, modifier l'état du contrôle revient à configurer la valeur par défaut du paramètre qui y est
+	associé.
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_CfgInterface.html">Description de l'Interface de Configuration des Contrôles</a><br>
+	<a href="usr_SaveIntCfgCom.html">Interface de Configuration: Onglet "Commun"</a><br>
+	<a href="usr_SaveIntCfgBool.html">Interface de Configuration: Onglet "Etat" de Type Booléen</a><br>
+	<a href="usr_SaveIntCfgStr.html">Interface de Configuration: Onglet "Etat" de Type Chaîne de caractères</a><br>
+	<a href="usr_SaveIntCfgMltStr.html">Interface de Configuration: Onglet "Etat" de Type Liste de Chaînes de caractères</a><br>
+	<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a><br>
+	<a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a><br>
+	<a href="usr_SaveIntParam.html">Interface d'Enregistrement: Paramètres de la Macro</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>

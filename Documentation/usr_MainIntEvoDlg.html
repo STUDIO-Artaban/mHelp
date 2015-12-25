@@ -1,0 +1,298 @@
+<!- Interface Principale: Evolution des Paramètres - DynHelp SDK V1.21 - FR ->
+<html>
+<head>
+<title>Interface Principale: Evolution des Paramètres</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Interface Principale: Evolution des Paramètres</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	L'interface "Evolution du Paramètre" vous permet de configurer les valeurs du paramètre sélectionné, suivant la répétition. Cette interface
+	est appelée via le bouton "...", qui s'affiche à la sélection d'un paramètre (voir 
+	<a href="usr_MainIntSom.html">Interface Principale: Onglet "Sommaire"</a>), dès lors qu'il y a une répétition.<br><br>
+	<center><img src="EvolDlg.jpg" border="0" usemap="#EvolDlg"></center><br>
+	<map name="EvolDlg">
+		<area shape=RECT coords="65,52,132,67" href="#Type">
+		<area shape=RECT coords="65,75,132,90" href="#Limit">
+		<area shape=RECT coords="20,116,119,157" href="#Description">
+		<area shape=RECT coords="164,68,278,84" href="#EvolOper">
+		<area shape=RECT coords="164,107,278,123" href="#AssVal">
+		<area shape=RECT coords="163,137,278,156" href="#Apply">
+		<area shape=RECT coords="300,38,371,57" href="#Valid">
+		<area shape=RECT coords="300,66,371,85" href="#Remove">
+		<area shape=RECT coords="300,97,371,116" href="#Cancel">
+		<area shape=RECT coords="299,143,373,165" href="#Help">
+		<area shape=RECT coords="21,190,317,203" href="#Value">
+		<area shape=RECT coords="321,190,360,203" href="#Row">
+		<area shape=RECT coords="20,206,362,358" href="#ValList">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b><a name="Type">Type</a></b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Type de paramètre.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Limit">Limite</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Limite du paramètre.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Description">Description</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Description du paramètre.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="EvolOper">Type d'évolution</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Liste des outils d'évolution permettant de modifier de manière automatique les valeurs du paramètre.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="AssVal">Valeur associée</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Zone d'édition utilisée par certains outils d'évolution comme par exemple l'outil "Incrémenter", permettant de fixer la valeur
+		d'incrémentation (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Apply">Appliquer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet d'appliquer le changement des valeurs du paramètre suivant le type d'outils d'évolution sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Valid">Valider</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de valider le changement des valeurs du paramètre suivant la répétition.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Remove">Retirer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de retirer le changement des valeurs du paramètre, conservant alors la première valeur du paramètre durant toutes les
+		répétitions.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Cancel">Annuler</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet d'annuler le changement des valeurs du paramètre suivant la répétition.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Help">Aide (F1)</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de lancer l'aide utilisateur du système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Value">Valeur</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Valeur du paramètre suivant la répétition.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Row">Rang</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Index de la répétition.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="ValList">Liste des valeurs</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Liste des valeurs du paramètre suivant l'index de la répétition (Rang).
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Remarques</b><br><br><!- ******************************************************************************************************************* Remarques ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	Les outils d'évolution sont utiles lorsqu'il y a beaucoup de répétitions, et que vous avez à effectuer certains changements spécifiques
+	sur les valeurs du paramètre. Voici la description des différents types d'outils existants, pour faire évoluer le paramètre tout au long
+	des répétitions:<br><br>
+	<table border="0" cellpadding="4" cellspacing="0" width="100%">
+	<tr>
+	<td width="20"><img src="puce.jpg"></td>
+	<td width="100%"><font face="Verdana,Lucida" size="2">
+		<b>Copier la 1° sel.</b>
+	</font></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><font face="Verdana,Lucida" size="2">
+		Ce type d'évolution vous permet, via le bouton <a href=#Apply>"Appliquer"</a>, de copier la première valeur sélectionnée dans les valeurs
+		sélectionnées qui suivent. Dans l'exemple plus haut, cela aurait pour effet de copier la valeur "Introduction.doc", dans celles contenant
+		les valeurs "Projet.rtf", "CV.doc" et "Document1.doc".
+	</font></td>
+	</tr>
+	<tr height="8"><td></td><td></td></tr>
+	<tr>
+	<td><img src="puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Copier/Coller</b>
+	</font></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<table border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tr>
+		<td valign="top"><img src="EvolCpCl.jpg" border="0"></td>
+		<td valign="top"><font face="Verdana,Lucida" size="2">
+			Le type d'évolution "Copier/Coller" permet dans un premier temps, de copier les valeurs sélectionnées, pour ensuite les coller
+			dans les nouvelles valeurs sélectionnées. Si, lors d'un collage, le nombre de nouvelles valeurs sélectionnées est supérieur au
+			nombre de valeurs copiées, alors ces dernières seront répétées autant de fois qu'il est nécessaire.
+		</font></td>
+		</tr>		
+		</table>
+	</font></td>
+	</tr>
+	<tr height="8"><td></td><td></td></tr>
+	<tr>
+	<td><img src="puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Incrémenter</b>
+	</font></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<table border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tr>
+		<td valign="top"><img src="EvolIncInt.jpg" border="0"></td>
+		<td valign="top"><font face="Verdana,Lucida" size="2">
+			Pour les paramètres de type Entier ou Booléen, le type d'évolution "Incrémenter" permet d'incrémenter les valeurs sélectionnées,
+			suivant la valeur associée.
+		</font></td>
+		</tr>		
+		<tr>
+		<td valign="top"><img src="EvolIncStr.jpg" border="0"></td>
+		<td valign="top"><font face="Verdana,Lucida" size="2">
+			Pour les paramètres de type Chaîne de caractères, cela permet d'ajouter et d'incrémenter à la fin de chaque valeurs sélectionnées,
+			un nombre convertie en chaîne de caractères et s'incrémentant de un. L'option "Ext." permet d'adopter un comportement spécifique
+			pour les valeurs représentant un nom de fichier, avec son extension (comme dans l'exemple plus haut). Cela a pour effet d'ajouter
+			et d'incrémenter la valeur associée convertie en chaîne de caractères, non pas en fin des paramètres sélectionnées, mais juste
+			avant l'extension du fichier, autrement dit, dans le nom du fichier.
+		</font></td>
+		</tr>		
+		</table>
+	</font></td>
+	</tr>
+	<tr height="8"><td></td><td></td></tr>
+	<tr>
+	<td><img src="puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Décrémenter</b>
+	</font></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<table border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tr>
+		<td valign="top"><img src="EvolDec.jpg" border="0"></td>
+		<td valign="top"><font face="Verdana,Lucida" size="2">
+			Ce type d'évolution est réservé aux paramètres de type Entier ou Booléen, et permet de décrémenter les valeurs sélectionnées,
+			suivant	la valeur associée.
+		</font></td>
+		</tr>		
+		</table>
+	</font></td>
+	</tr>
+	<tr height="8"><td></td><td></td></tr>
+	<tr>
+	<td><img src="puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Changer d'état</b>
+	</font></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<table border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tr>
+		<td valign="top"><img src="EvolChg.jpg" border="0"></td>
+		<td valign="top"><font face="Verdana,Lucida" size="2">
+			Ce type d'évolution est réservé aux paramètres de type Booléen, et permet de changer d'état toutes les énièmes sélections,
+			définies dans la valeur associée ("Toutes les :").
+		</font></td>
+		</tr>		
+		</table>
+	</font></td>
+	</tr>
+	</table><br>
+	Une fois les valeurs du paramètre configurés pour évoluer suivant la répétition, l'icône du paramètre change de l'image d'un document rouge
+	à l'image d'un document vert (voir <a href="usr_TreeItemList.html">Description des Eléments de l'Arborescence</a>).
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_MainIntSom.html">Interface Principale: Onglet "Sommaire"</a><br>
+	<a href="usr_TreeItemList.html">Description des Eléments de l'Arborescence</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>

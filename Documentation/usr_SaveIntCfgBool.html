@@ -1,0 +1,196 @@
+<!- Interface de Configuration: Onglet "Etat" de Type Booléen - DynHelp SDK V1.21 - FR ->
+<html>
+<head>
+<title>Interface de Configuration: Onglet "Etat" de Type Booléen</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Interface de Configuration: Onglet "Etat" de Type Booléen</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	L'onglet "Etat" de l'interface de configuration, vous permet de modifier la valeur du paramètre associé à l'état d'un contrôle, initialement
+	fixée durant la création de la macro. Cette interface dépend du type de contrôle et donc du type de paramètre qui y est associé (voir
+	<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a>). Dans l'exemple qui suit il s'agit d'un paramètre
+	de type Booléen (B).<br><br>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="20"><img src="Puce.jpg"></td>
+	<td><font face="Verdana,Lucida" size="2">
+		<b>Contrôles de type: CheckBox, ToolBar checkbox</b>
+	</font></td>
+	</tr>
+	</table><br>
+	<center><img src="CfgBool.jpg" border="0" usemap="#CfgBool"></center><br>
+	<map name="CfgBool">
+		<area shape=RECT coords="9,35,58,51" href="usr_SaveIntCfgCom.html">
+		<area shape=RECT coords="105,35,155,51" href="#About">
+		<area shape=RECT coords="20,72,114,89" href="#Check">
+		<area shape=RECT coords="20,89,114,106" href="#Uncheck">
+		<area shape=RECT coords="20,106,114,123" href="#Change">
+		<area shape=RECT coords="241,72,296,87" href="#Value">
+		<area shape=RECT coords="23,248,294,263" href="#Description">
+		<area shape=RECT coords="128,272,294,287" href="#Type">
+		<area shape=RECT coords="128,296,294,311" href="#Limit">
+		<area shape=RECT coords="7,337,93,361" href="#Help">
+		<area shape=RECT coords="135,338,218,359" href="#Apply">
+		<area shape=RECT coords="228,338,311,359" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b>Commun</b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Onglet "Commun" permettant de configurer le comportement à suivre dans le cas où le contrôle en cours de configuration,	serait
+		invisible ou inactif durant (voir <a href="usr_SaveIntCfgCom.html">Interface de Configuration: Onglet "Commun"</a>).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="About">A Propos</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Onglet contenant des informations sur le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Check">Activé</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de modifier l'état initial du contrôle, de manière à cocher ce CheckBox lors du lancement de la macro.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Uncheck">Désactivé</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de modifier l'état initial du contrôle, de manière à décocher ce CheckBox lors du lancement de la macro.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Change">Change l'état/Indéterminé</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de modifier l'état initial du contrôle, de manière à changer l'état de ce CheckBox lors du lancement de la macro / Permet de
+		modifier l'état initial du contrôle, de manière à positionner ce CheckBox dans l'état indéterminé, lors du lancement de la macro
+		(voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Value">Valeur de l'état</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Valeur du paramètre (0: Désactivé, 1: Activé, 2: Change l'état/Indéterminé).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Description">Description</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de définir la description du paramètre (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Type">Type</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Affiche le type de paramètre (voir <a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a>).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Limit">Limite</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de définir la limite du paramètre, fixée par défaut à [0;2] pour ce type de contrôle (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Help">Aide (F1)</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de lancer l'aide utilisateur du système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Apply">Appliquer</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet d'appliquer les changements configurés pour le contrôle sélectionné.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Close">Fermer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de fermer l'interface.
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Remarques</b><br><br><!- ******************************************************************************************************************* Remarques ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	L'option "Change l'état/Indéterminé" est lié au fait qu'un contrôle de type CheckBox peut avoir suivant son style, deux états comme dans
+	l'exemple (Activé/Désactivé), ou trois états (Activé/Désactivé/Indéterminé).<br><br>
+	Les zones d'édition permettant de définir la description du paramètre et de ses limites, ne peuvent être éditées que dans le cas où vous
+	souhaitez créer une macro paramétrable, et qu'il s'agit là de la configuration d'un de ses paramètres (voir
+	<a href="usr_SaveIntParam.html">Interface d'Enregistrement: Paramètres de la Macro</a>).<br><br>S'il s'agit de la configuration d'un des
+	paramètres de la future macro paramétrable, modifier l'état du contrôle revient à configurer la valeur par défaut du paramètre qui y est
+	associé.
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_CfgInterface.html">Description de l'Interface de Configuration des Contrôles</a><br>
+	<a href="usr_SaveIntCfgCom.html">Interface de Configuration: Onglet "Commun"</a><br>
+	<a href="usr_SaveIntCfgInt.html">Interface de Configuration: Onglet "Etat" de Type Entier</a><br>
+	<a href="usr_SaveIntCfgStr.html">Interface de Configuration: Onglet "Etat" de Type Chaîne de caractères</a><br>
+	<a href="usr_SaveIntCfgMltStr.html">Interface de Configuration: Onglet "Etat" de Type Liste de Chaînes de caractères</a><br>
+	<a href="usr_CtrlParamType.html">Description des Contrôles et des Types de Paramètre</a><br>
+	<a href="usr_SaveIntCtrlCfg.html">Interface d'Enregistrement: Liste des Contrôles</a><br>
+	<a href="usr_SaveIntParam.html">Interface d'Enregistrement: Paramètres de la Macro</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>

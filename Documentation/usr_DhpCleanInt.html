@@ -1,0 +1,174 @@
+<!- Interface de l'Outil "DhpClean.exe" - DynHelp SDK V1.21 - FR ->
+<html>
+<head>
+<title>Interface de l'Outil "DhpClean.exe"</title>
+</head>
+<body topmargin="5">
+<font face="Verdana,Lucida" size="2">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="Left"><font face="Verdana,Lucida" size="1"><b>DynHelp</b>: Guide Utilisateur</font></td>
+<td align="Right"><font face="Verdana,Lucida" size="1">V1.21</font></td>
+</tr>
+</table><hr>
+<table border="5" bgcolor="#000000" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="left"><font size="4" color="#FFFFFF"><!- ********************************************************************** Description de l'Interface ->
+	<b>Interface de l'Outil "DhpClean.exe"</b></font>
+</tr></td>
+</table><br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2"><!- ********************************************************************************************************** Description ->
+	L'outil "DhpClean.exe" permet de restaurer à l'état initial certaines clés de la base de registres, générées par le système DynHelp durant
+	un processus de création ou de lancement de macro.<br><br>
+	<center><img src="DhpClean.jpg" border="0" usemap="#DhpClean"></center><br>
+	<map name="DhpClean">
+		<area shape=RECT coords="19,143,117,158" href="#App">
+		<area shape=RECT coords="119,143,187,158" href="#Status">
+		<area shape=RECT coords="189,143,342,158" href="#DhpApp">
+		<area shape=RECT coords="19,160,344,263" href="#AppList">
+		<area shape=RECT coords="188,271,261,292" href="#Refresh">
+		<area shape=RECT coords="272,271,345,292" href="#Destroy">
+		<area shape=RECT coords="19,327,344,360" href="#DhpStatus">
+		<area shape=RECT coords="8,377,81,398" href="#Help">
+		<area shape=RECT coords="195,377,268,398" href="#Clear">
+		<area shape=RECT coords="279,377,352,398" href="#Close">
+	</map>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+	<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top" align="left" width="25%"><font face="Verdana,Lucida" size="2">
+		<b><a name="App">Application</a></b>
+	</font></td>
+	<td valign="top" align="left" width="75%"><font face="Verdana,Lucida" size="2">
+		Nom de l'application utilisant le système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Status">Statut</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Statut de l'application : Ouvert / Fermé / Non trouvé. Ce dernier statut signifie que l'application a été détruite ou déplacée
+		de son répertoire d'origine.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="DhpApp">Système DynHelp</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Statut du système DynHelp dans cette application : Fermé / Interface ouverte / Macro en cours de création / Macro en cours
+		de lancement.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="AppList">Liste des applications</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Liste contenant des informations sur le statut des applications utilisant le système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Refresh">Rafraîchir</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de rafraîchir la liste des statuts des applications, et le statut du système DynHelp.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Destroy">Détruire</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de détruire les clés de la base de registres liées à l'application sélectionnée, dont le statut est 'Non trouvé'
+		(voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="DhpStatus">Statut de DynHelp</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Statut général du système DynHelp : En attente / En cours de création de macro / En cours de lancement de macro / En cours
+		de sauvegarde de macro.
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Help">Aide (F1)</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de lancer l'aide utilisateur du système DynHelp.
+	</font></td>
+	</tr>
+
+	<tr>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		<b><a name="Clear">Initialiser</a></b>
+	</font></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Permet de restaurer l'état initial des clés de la base de registres (voir Remarques).
+	</font></td>
+	</tr>
+	<tr>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		<b><a name="Close">Fermer</a></b>
+	</font></td>
+	<td valign="top" bgcolor="#E0E0E0"><font face="Verdana,Lucida" size="2">
+		Permet de quitter cet outil.
+	</font></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td bgcolor="#E0E0E0"></td></tr>
+	</table>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Remarques</b><br><br><!- ******************************************************************************************************************* Remarques ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	Détruire les clés de la base de registres liées à une application qui a été détruite ou déplacée de son répertoire d'origine, a pour effet de
+	supprimer la configuration, les fichiers de macros ouvert et les macros favorites de cette application.<br><br>
+	Restaurer l'état initial des clés de la base de registres revient à considérer que toutes les applications utilisant le système DynHelp sont
+	fermées (comme il vous est demandé de le faire à l'ouverture de cet outil), et que par conséquent aucune interface principale DynHelp n'est
+	ouverte, et que le système est en attente.<br><br>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td valign="top"><img src="warning.jpg"></td>
+	<td width="18"></td>
+	<td valign="top"><font face="Verdana,Lucida" size="2">
+		Une fois l'initialisation terminée, un message d'avertissement vous invite à fermer cette application avant de reprendre vos opérations
+		de création ou de lancement de macros. Si toutefois vous laissez cet outil ouvert, ou que vous ne fermez pas toutes les applications
+		utilisant le système DynHelp à l'ouverture de ce dernier, cela n'a pas d'importance, mais dans ce cas il est déconseillé de restaurer
+		l'état initial des clés de la base de registres, sans quoi d'autres problèmes peuvent survenir comme notamment au niveau de la gestion
+		des macros favorites.
+	</font></td>
+	</tr>
+	</table>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br>
+<b>Voir Aussi</b><br><br><!- ***************************************************************************************************************** Voir Aussi ->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="94%"><font size="2">
+	<a href="usr_DhpClean.html">Description de l'Outil "DhpClean.exe"</a>
+</font></td>
+<td width="3%"></td>
+</tr>
+</table><br><br>
+</font>
+</body>
+</html>
